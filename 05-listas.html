@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Listas en HTML</title>
+	<style>
+		ul {color:blue;}
+		ol {color: green;}
+		.num-rom-mai {
+			list-style-type:upper-roman; /*números romanos maiúsculas*/
+			color: tomato;
+		}
+		.num-rom-min {
+			list-style-type:lower-roman; /*números romanos minúsculas*/
+			color:grey;
+		}
+		.letras-mai {
+			list-style-type: upper-latin; /* letras maiúsculas */
+			color:red;
+		}
+		.lista-enlaces {
+			list-style-type: none;
+		}
+	</style>
+</head>
+<body>
+	<h1>Listas</h1>
+
+	<h3>Listas desordenadas (ul)</h3>
+	<!-- emmet: ul>li{Elemento $}*5 -->
+	<ul>
+		<li>Elemento 1</li>
+		<li>Elemento 2</li>
+		<li>Elemento 3</li>
+		<li>Elemento 4</li>
+		<li>Elemento 5</li>
+		<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio omnis ratione veniam, eum reprehenderit.</li>
+		<li>Elemento 7</li>
+	</ul>
+
+	<h3>Listas Ordenadas</h3>
+
+	<ol>
+		<li>Elemento a</li>
+		<li>Elemento b</li>
+		<li>Elemento c</li>
+		<li>Elemento c1</li>
+		<li>Elemento d</li>
+		<li>Elemento e</li>
+	</ol>
+
+	<h3>Listas aniñadas</h3>
+
+	<ul>
+		<li>Elemento tipo A</li>
+		<li>Elemento tipo B</li>
+		<ul>
+			<!-- li{Elemento tipo B.$}*3 -->
+			<li>Elemento tipo B.1</li>
+			<li>Elemento tipo B.2</li>
+			<ul>
+				<li>Elemento tipo B.2.1</li>
+				<li>Elemento tipo B.2.2</li>
+			</ul>
+			<li>Elemento tipo B.3</li>
+		</ul>
+		<li>Elemento tipo C</li>
+		<li>Elemento tipo D</li>
+		<ol class="num-rom-min">
+			<li>Elemento</li>
+			<li>Elemento</li>
+			<li>Elemento</li>
+		</ol>
+		<li>Elemento tipo E</li>
+	</ul>
+
+
+	<ol class="num-rom-mai">
+		<li>Elemento</li>
+		<ol class="letras-mai">
+			<li>Elemento</li>
+			<li>Elemento</li>
+			<ol>
+				<li>Elemento</li>
+				<li>Elemento</li>
+			</ol>
+			<li>Elemento</li>
+		</ol>
+		<li>Elemento</li>
+		<li>Elemento</li>
+		<li>Elemento</li>
+		<ul>
+			<li>Elemento A</li>
+			<li>Elemento B</li>
+		</ul>
+		<li>Elemento</li>
+	</ol>
+
+	<h3>Lista de enlaces:</h3>
+
+	<ul class="lista-enlaces">
+		<li><a href="http://iespenanovo.com">IES Lois</a></li>
+		<li><a href="http://edu.xunta.gal">Educación Xunta</a></li>
+
+	</ul>	
+	
+</body>
+</html>
