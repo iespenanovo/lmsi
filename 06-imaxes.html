@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Imaxes html</title>
+	<style>
+		body {
+			background-color: grey;/* color de fondo*/
+		}
+
+		#imaxen {
+			width: 80%; /* tamaño 80% respecto ao seu contenedor (body) */
+			max-width: 640px;
+
+		}
+		#logos {
+			width: 100%; /* tamaño 100% respecto ao seu contenedor (p#imaxen)*/
+		}
+	</style>
+</head>
+<body>
+	<h1>Imaxes indicando o seu tamaño real (ancho e alto)</h1>
+	<h2>O resultado é o mesmo que se non poñemos dimensións, aínda que o navegador sabe o espazo que ocupará a imaxe antes de descargala</h2>
+	<img src="img/html5-st.png" alt="imaxe sen transparencia" title="sen transparencia" width="225" height="225">
+	<img src="img/html5.png" alt="imaxe con transparencia" title="con transparencia" width="256" height="256">
+	<img src="img/icon-2488093_640.jpg" alt="iconas varias" width="640" height="320">
+	<img src="img/icon-2488093_640.png" alt="iconas varias" width="640" height="320">
+
+	<h1>Imaxes cambiando o tamaño</h1>
+	<h2>Cambiando ancho e alto (pódese cambiar a relación de aspecto)</h2>
+	<img src="img/html5.png" alt="" width="200" height="100">
+	<img src="img/icon-2488093_640.jpg" alt="" width="300" height="300">
+	<h2>Cambiando ancho ou alto (se mantén a relación de aspecto)</h2>
+
+	<img src="img/html5.png" alt="" width="50">
+	<img src="img/icon-2488093_640.png" alt="" height="100">
+
+	<!-- non se recomenda aumentar en exceso o tamaño real da imaxe (por pixelado) -->
+	<img src="img/html5-st.png" alt="" width="500">
+
+
+	<p id="imaxen">
+		<img id="logos" src="img/icon-2488093_640.png" alt="">
+	</p>
+
+
+
+
+	
+</body>
+</html>
