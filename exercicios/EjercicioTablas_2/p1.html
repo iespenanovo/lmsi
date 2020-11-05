@@ -1,14 +1,62 @@
-﻿<html>
+<html>
 <head>
-  <title>Ejercicio 1</title>
-  <style type="text/css" >
-	.nombre {text-align: center; border:5px dashed red; width: 900px; margin: auto;padding: 10px; color:blue;}
-	
-  </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Ejercicio 1</title>
+	<style type="text/css" >
+		.nombre {text-align: center; border:5px dashed red; width: 900px; margin: auto;padding: 10px; color:blue;}
+
+		td {
+			border: 1px solid black;
+			text-align: center;
+			width: 50%;
+			padding: 10px;
+			color: blue;
+		}
+		table {
+			margin: auto;
+			padding: 20px;
+			border: 3px solid black;
+			border-spacing: 12px;
+		}
+		img.icono {
+			display: block;
+			margin: auto;
+			padding-top: 10px;
+		}
+
+	</style>
 </head>
 <body>
-	<h1 class="nombre">Pon aquí tu nombre y apellidos</h1>
+	<h1 class="nombre">nombre y apellidos</h1>
 
+	<table>
+		<caption><h2>Oferta Cilcos Formativos</h2></caption>
+		<tr>
+			<td colspan="2">
+				<img src="imagenes/logo.jpg" alt="">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Administrativo
+				<!-- <br> -->
+				<a href="documentos/administracion.pdf">
+					<img class="icono" src="imagenes/admin.jpg" alt="">
+				</a>
+			</td>
+			<td>Informática</td>
+		</tr>
+		<tr>
+			<td>Electricidad</td>
+			<td>Mecánica</td>
+		</tr>
+		<tr>
+			<td colspan="2"><a href="http://edu.xunta.es" target="_blank">Ver oferta educativa completa</a></td>
+		</tr>
+	</table>
+	
 	
 </body>
 </html>
