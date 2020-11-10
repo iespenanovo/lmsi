@@ -10,7 +10,13 @@
 
 <?php
 	$nome = $_GET["nome"] ?? "";
+	$clave = $_GET["clave"] ?? "";
+	$sexo = $_GET["sexo"] ?? "";
+
 	echo "<p>Nome: $nome</p>";
+	echo "<p>Clave: $clave</p>";
+	echo "<p>Sexo: $sexo</p>";
+
 ?>	
 
 	<p>

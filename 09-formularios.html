@@ -4,21 +4,63 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Formularios</title>
+	<style>
+		#contedor{
+			width: 60%;
+			max-width: 300px;
+			margin: auto;
+			border: 1px solid grey;
+			padding: 15px;
+		}
+		.campos {
+			margin-bottom: 8px;
+		}
+		label {
+			font-size: 0.8rem;
+			font-style: italic;
+		}
+		label.etiqueta {
+			display: block;
+		}
+	</style>
 </head>
 <body>
-	<h1>Formularios</h1>
+	<div id="contedor">
+		<h1>Formularios</h1>
 
-	<form action="09-formularios.php" method="GET">
+		<form action="09-formularios.php" method="GET">
 
-		<p>
-			<label for="cnome">Nome: </label>
-			<input id="cnome" type="text" name="nome">
-		</p>
+			<div class="campos">
+				<label class="etiqueta" for="cnome">Nome</label>
+				<input id="cnome" type="text" name="nome" maxlength="25" size="10">
+			</div>
 
-		<p>
-			<input type="submit" value="Enviar Datos" >
-		</p>
-		
-	</form>
+			<div class="campos">
+				<label class="etiqueta" for="cclave">Clave</label>
+				<input id="cclave" type="password" name="clave">
+			</div>
+
+			<!-- type hidden é un campo oculto -->
+			<input type="hidden" value="r45" name="referencia">
+
+			<div class="campos">
+				<label class="etiqueta">Sexo</label>
+				<label for="chome">Home</label>
+				<input id="chome" type="radio" name="sexo" value="H">
+				<label for="cmuller">Muller</label>
+				<input id="cmuller" type="radio" name="sexo" value="M">
+			</div>	
+
+			
+
+
+
+			<div class="campos">
+				<input type="submit" value="Enviar Datos" >
+			</div>
+
+		</form>
+	</div>
 </body>
 </html>
+
