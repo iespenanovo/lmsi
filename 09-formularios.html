@@ -22,6 +22,9 @@
 		label.etiqueta {
 			display: block;
 		}
+		#idade {
+			width: 50px;
+		}
 	</style>
 </head>
 <body>
@@ -32,7 +35,7 @@
 
 			<div class="campos">
 				<label class="etiqueta" for="cnome">Nome</label>
-				<input id="cnome" type="text" name="nome" maxlength="25" size="10">
+				<input id="cnome" type="text" name="nome" maxlength="25" size="10" value="">
 			</div>
 
 			<div class="campos">
@@ -44,23 +47,47 @@
 			<input type="hidden" value="r45" name="referencia">
 
 			<div class="campos">
+				<label class="etiqueta" for="idade">Idade</label>
+				<input id="idade" type="number" name="idade" >
+			</div>
+
+			<div class="campos">
 				<label class="etiqueta">Sexo</label>
 				<label for="chome">Home</label>
 				<input id="chome" type="radio" name="sexo" value="H">
 				<label for="cmuller">Muller</label>
-				<input id="cmuller" type="radio" name="sexo" value="M">
+				<input id="cmuller" type="radio" name="sexo" value="M" > 
+				<!-- o atributo checked permite marcar por defecto unha opción de radio -->
+
 			</div>	
 
-			
+			<div class="campos">
+				<label class="etiqueta">Deportes</label>
+				<label for="f">Fútbol</label>
+				<input id="f" type="checkbox" value="F" name="dep[]">
+				<label for="b">Baloncesto</label>
+				<input id="b" type="checkbox" value="B" name="dep[]">
+				<label for="t">Ténis</label>
+				<input id="t" type="checkbox" value="T" name="dep[]">
+
+				<!-- o atributo checked permite marcar por defecto unha opción de checkbox -->
+
+			</div>
+
 
 
 
 			<div class="campos">
 				<input type="submit" value="Enviar Datos" >
+				<input type="reset" value="Borrar Datos">
+			</div>
+			<div class="campos">
+				<input type="image" src="img/enviar_formulario.png" width="100">
 			</div>
 
 		</form>
 	</div>
+	<hr>
 </body>
 </html>
 
