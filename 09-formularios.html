@@ -35,8 +35,10 @@
 
 			<div class="campos">
 				<label class="etiqueta" for="cnome">Nome</label>
-				<input id="cnome" type="text" name="nome" maxlength="25" size="10" value="">
+				<input id="cnome" type="text" name="nome" maxlength="25" size="10" value="" required>
 			</div>
+			<!-- o parámetro required obliga a completar ese campo antes do envío -->
+			<!-- se poden usar os parámetros disabled é readonly para impedir o uso dun campo -->
 
 			<div class="campos">
 				<label class="etiqueta" for="cclave">Clave</label>
@@ -47,8 +49,8 @@
 			<input type="hidden" value="r45" name="referencia">
 
 			<div class="campos">
-				<label class="etiqueta" for="idade">Idade</label>
-				<input id="idade" type="number" name="idade" >
+				<label class="etiqueta" for="cidade">Idade</label>
+				<input id="cidade" type="number" name="idade" >
 			</div>
 
 			<div class="campos">
@@ -72,10 +74,22 @@
 
 				<!-- o atributo checked permite marcar por defecto unha opción de checkbox -->
 
+			<div class="campos">
+				<label class="etiqueta" for="cprov">Provincia</label>
+				<select name="prov" id="cprov">
+					<option value="">- Seleccione -</option>
+					<option value="CO">A Coruña</option>
+					<option value="LU">Lugo</option>
+					<option value="OU">Ourense</option>
+					<option value="PO">Pontevedra</option>
+				</select>
+				<!-- por defecto sempre está seleccionada a primeira opción das option, por iso a primeira non debe ser unha opción de datos seleccionable -->
+				<!-- o atributo selected na etiqueta option permite marcar por defecto esa opción da select -->
+
 			</div>
 
 
-
+			</div>
 
 			<div class="campos">
 				<input type="submit" value="Enviar Datos" >
@@ -84,10 +98,13 @@
 			<div class="campos">
 				<input type="image" src="img/enviar_formulario.png" width="100">
 			</div>
+			<!-- ou usamos type 'submit' ou type 'image' para enviar o formuilario, non as duas. -->
+			<div class="campos">
+				<input type="button" value="Botón configurable" onclick="alert('Botón configurable con javascript')">
+			</div>
 
 		</form>
 	</div>
-	<hr>
 </body>
 </html>
 

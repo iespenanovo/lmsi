@@ -14,6 +14,7 @@
 	$idade = $_GET["idade"] ?? "";
 	$sexo = $_GET["sexo"] ?? "";
 	$dep = $_GET["dep"] ?? array();
+	$prov = $_GET["prov"] ?? "";
 
 	echo "<p>Nome: $nome</p>";
 	echo "<p>Clave: $clave</p>";
@@ -24,6 +25,7 @@
 		echo "$value ";
 	}
 	echo "</p>";
+	echo "<p>Provincia: $prov</p>";
 
 ?>	
 
