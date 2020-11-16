@@ -25,6 +25,7 @@
 		#idade {
 			width: 50px;
 		}
+		textarea { width: 100%; }
 	</style>
 </head>
 <body>
@@ -74,30 +75,51 @@
 
 				<!-- o atributo checked permite marcar por defecto unha opción de checkbox -->
 
-			<div class="campos">
-				<label class="etiqueta" for="cprov">Provincia</label>
-				<select name="prov" id="cprov">
-					<option value="">- Seleccione -</option>
-					<option value="CO">A Coruña</option>
-					<option value="LU">Lugo</option>
-					<option value="OU">Ourense</option>
-					<option value="PO">Pontevedra</option>
-				</select>
-				<!-- por defecto sempre está seleccionada a primeira opción das option, por iso a primeira non debe ser unha opción de datos seleccionable -->
-				<!-- o atributo selected na etiqueta option permite marcar por defecto esa opción da select -->
+				<div class="campos">
+					<label class="etiqueta" for="cprov">Provincia</label>
+					<select name="prov" id="cprov">
+						<option value="">- Seleccione -</option>
+						<option value="CO">A Coruña</option>
+						<option value="LU">Lugo</option>
+						<option value="OU">Ourense</option>
+						<option value="PO">Pontevedra</option>
+					</select>
+					<!-- por defecto sempre está seleccionada a primeira opción das option, por iso a primeira non debe ser unha opción de datos seleccionable -->
+					<!-- o atributo selected na etiqueta option permite marcar por defecto esa opción da select -->
 
+				</div>
+
+				<div class="campos">
+					<label class="etiqueta" for="cso">Sistemas Opertaivos</label>
+					<select name="so[]" id="cso" multiple size="5">
+						<optgroup label="Windows" >
+							<option value="w10">Windows 10</option>
+							<option value="w8">Windows 8</option>
+						</optgroup>
+						<optgroup label="Outros">
+							<option value="lx">Linux</option>
+							<option value="mac">MACOS</option>
+							<option value="ot">Outros</option>
+						</optgroup>
+
+					</select>
+				</div>
 			</div>
 
-
+			<div class="campos">
+				<label class="etiqueta" for="ccoment">Comentario</label>
+				<textarea name="coment" id="ccoment" cols="30" rows="3"></textarea>
 			</div>
 
 			<div class="campos">
 				<input type="submit" value="Enviar Datos" >
 				<input type="reset" value="Borrar Datos">
 			</div>
+
 			<div class="campos">
 				<input type="image" src="img/enviar_formulario.png" width="100">
 			</div>
+			
 			<!-- ou usamos type 'submit' ou type 'image' para enviar o formuilario, non as duas. -->
 			<div class="campos">
 				<input type="button" value="Botón configurable" onclick="alert('Botón configurable con javascript')">

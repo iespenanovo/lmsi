@@ -15,6 +15,7 @@
 	$sexo = $_GET["sexo"] ?? "";
 	$dep = $_GET["dep"] ?? array();
 	$prov = $_GET["prov"] ?? "";
+	$so = $_GET["so"] ?? array();
 
 	echo "<p>Nome: $nome</p>";
 	echo "<p>Clave: $clave</p>";
@@ -26,6 +27,12 @@
 	}
 	echo "</p>";
 	echo "<p>Provincia: $prov</p>";
+
+	echo "<p>Sistemas Operativos:";
+	foreach ($so as $value) {
+		echo "$value ";
+	}
+	echo "</p>";
 
 ?>	
 
