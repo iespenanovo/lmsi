@@ -24,6 +24,23 @@
 			font-style: italic;
 		}
 
+		#corpo p.p1 span { 
+			/* aplica a elementos span, descendentes de párrafos da clase 'p1' que sexan descendentes de o elemento con id 'corpo' */
+			text-transform: none;
+			color: tomato;
+		}
+		#pe p.p1 span {
+			font-style: italic;
+			color: green;
+		}
+
+		.p2 span {
+			color: red;
+		}
+		h1.p1 span {
+			font-size: 2.5rem;
+			color: grey;
+		}
 	</style>
 </head>
 
@@ -42,12 +59,18 @@
 		</ol>
 	</div>
 	<div id="corpo">
+		<h1 class="p1">Bloque <span>Corpo</span></h1>
 		<ul>
 			<li>elemento 1</li>
 			<li><span>elemento 2</span></li>
 			<li>elemento 3</li>
 		</ul>
 		<p><span>Lorem ipsum</span> dolor, sit amet, consectetur adipisicing elit. Molestiae placeat cumque accusamus, impedit rerum vitae temporibus, blanditiis expedita nisi repellendus exercitationem, ratione, corrupti iure? Maiores vel, doloremque eum! Sequi, tempora.</p>
+
+		<!-- (p>lorem12)*3 -->
+		<p class="p1">Lorem ipsum dolor sit amet consectetur, <span>adipisicing</span> elit. Dolores atque mollitia reprehenderit.</p>
+		<p class="p1">Reprehenderit, commodi. Labore voluptatem sit <span>laborum</span> animi dignissimos eos tempore obcaecati non.</p>
+		<p class="p2">Aspernatur nihil nesciunt doloremque <span>maxime</span> aut expedita sint odit quibusdam ad, optio!</p>
 
 
 	</div>
@@ -56,7 +79,13 @@
 			<li>elemento 1</li>
 			<li>elemento 2</li>
 			<li>elemento 3</li>
-		</ul>		
+		</ul>	
+
+		<!-- (p>lorem12)*3 -->
+		<p class="p1">Lorem ipsum dolor sit amet consectetur, <span>adipisicing</span> elit. Dolores atque mollitia reprehenderit.</p>
+		<p class="p1">Reprehenderit, commodi. Labore voluptatem sit <span>laborum</span> animi dignissimos eos tempore obcaecati non.</p>
+		<p class="p2">Aspernatur nihil nesciunt doloremque <span>maxime</span> aut expedita sint odit quibusdam ad, optio!</p>
+
 	</div>
 </body>
 </html>
