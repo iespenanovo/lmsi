@@ -41,13 +41,35 @@
 			font-size: 2.5rem;
 			color: grey;
 		}
+
+		li > span { /* span que son fillos (descendentes directos) de li*/
+			border-right: 5px solid red;
+			padding-right: 8px;
+		}
+		li * span { /* span que non son descendentes directos de li (son descendentes, pero non son fillos, ten que haber un elemento calquera '*' polo medio) */
+			border-right: 5px solid green;
+			padding-right: 8px;
+		}
+
+		p + p { /* aplica a 'p' que teña inmediatamente antes outro 'p' */
+			text-indent: 1.5rem;
+		}
+
+		a[href="/"] { /* aplica a 'a' con atributo hrerf con valor '/' */
+			border-left: 5px solid tomato;
+			padding-left: 10px;
+		}
+		a[href="/html"] { /* aplica a 'a' con atributo hrerf con valor 'html' */
+			border-left: 5px solid black;
+			padding-left: 10px;
+		}
 	</style>
 </head>
 
 <body>
 	<div id="cabezeira">
 		<ul>
-			<li>elemento 1</li>
+			<li><a href="#"><span>elemento 1</span></a></li>
 			<li><span>elemento 2</span></li>
 			<li>elemento 3</li>
 		</ul>
@@ -76,9 +98,9 @@
 	</div>
 	<div id="pe">
 		<ul>
-			<li>elemento 1</li>
-			<li>elemento 2</li>
-			<li>elemento 3</li>
+			<li><a href="/">elemento 1 (raíz)</a></li>
+			<li><a href="/html">elemento 2 (html)</a></li>
+			<li><a href="07-taboas.html">elemento 3 (táboas)</a></li>
 		</ul>	
 
 		<!-- (p>lorem12)*3 -->
