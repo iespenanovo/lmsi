@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS dende arquivo externo</title>
+	<link rel="stylesheet" href="css/11-estilo.css">
+	<!-- o habitual é que unha folla de estilos esté vinculada dende varias páxinas html, así evitamos repetir código CSS -->
+
+	<style>
+		/* tamén pode ter esta sección de estilo na páxina, pero non se recomenda en xeral /*
+
+		/* o código desta sección é máis específico que o código externo. De haber conflicto, se aplica o desta sección */
+		.destacado {
+			text-align: right;
+		}
+	</style>
+</head>
+<body>
+	<h1 >CSS dende arquivo externo</h1>
+	<p class="destacado">Esta páxina usa unha folla de estilo almacenada nun arquivo externo</p>
+
+
+</body>
+</html>

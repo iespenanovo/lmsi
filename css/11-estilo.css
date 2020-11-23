@@ -1,0 +1,12 @@
+h1	{
+	text-align: center;
+	color:blue;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+.destacado {
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-align: justify;
+}

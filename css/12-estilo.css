@@ -1,0 +1,33 @@
+#contedor1 {
+	width: 250px;
+	height: 300px;
+
+	margin-top:20px;
+	margin-right: 25px;
+	margin-bottom: 30px;
+	margin-left: 35px;
+
+	/* a seguinte propieade colocaría
+	10px en todas as marxes*/
+	/*margin: 10px;*/
+
+	/* a seguinte propiedade equivale as 4 anteriores*/
+	/*margin: 20px 25px 30px 35px;*/
+
+	/* a seguinte propiedade colocaría 
+	20px de marxe superior
+	30px de marxe esquerdo e dereito
+	40px de marxe inferior*/
+	/*margin: 20px 30px 40px;*/
+
+	/* a segunte propiedade colocaría
+	10px de marxe superior e inferior
+	20px de marxe esquedeo e dereito */
+	/*margin: 10px 20px;*/
+
+	padding: 2rem 1rem;
+
+	border-width: thin thick medium thin;
+	border-style: solid;
+
+}
