@@ -1,6 +1,6 @@
-#contedor1 {
-	width: 250px;
-	height: 300px;
+#contedor1, #contedor2 {
+	width: 250px; /* por defecto indica anchura do contido*/
+	height: 300px; /* por defecto indica anchura do contido*/
 
 	margin-top:20px;
 	margin-right: 25px;
@@ -28,6 +28,44 @@
 	padding: 2rem 1rem;
 
 	border-width: thin thick medium thin;
-	border-style: solid;
+	border-color: green grey grey green;
+	border-style: dotted dashed solid double;
+
+
+	/* tamén podemos usar estas outras formas:
+	border-right: 2px solid blue;
+
+	se é para todos igual:
+	border: 1px dotted red;
+	*/
+
+	/*para poñer cor ao fondo:*/
+
+	background-color: #BDD2E9;
+	background-image: url(../img/html5.png);
+
+}
+
+#contedor2 {
+	box-sizing: border-box; /* esto indica que o 
+	tamaño da caixa vai de borde a borde 
+	(no define o tamaño do contido , 
+	define o tamaño dende un borde 
+	ao oposto)*/
+/*  
+	o valor por defecto para box-sizing e content-box
+	box-sizing: content-box;
+*/	
+}
+
+#contedor3 {
+	width: 400px;
+
+}
+
+#contedor3A, #contedor3B {
+	width: 198px;
+	float: left;
+	border: 1px solid red;
 
 }
