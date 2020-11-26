@@ -49,7 +49,7 @@
 #contedor2 {
 	box-sizing: border-box; /* esto indica que o 
 	tamaño da caixa vai de borde a borde 
-	(no define o tamaño do contido , 
+	(non define o tamaño do contido , 
 	define o tamaño dende un borde 
 	ao oposto)*/
 /*  
@@ -60,12 +60,31 @@
 
 #contedor3 {
 	width: 400px;
-
 }
 
 #contedor3A, #contedor3B {
-	width: 198px;
-	float: left;
-	border: 1px solid red;
+	box-sizing: content-box; /* é o valor por defecto de box-sizing */
+	width: 186px;
+	float: left; /*permite que as caixas 'floten' dende a esquerda*/
+	border: 2px solid red;
+	padding: 5px;
 
+	/* 186px  + 4px de borde + 10px de padding = 200 */
 }
+
+#contedor4 {
+	width: 400px;
+}
+
+#contedor4A, #contedor4B {
+	box-sizing: border-box;
+	width: 200px;
+	float: left;
+	border: 2px solid red;
+	padding: 5px;
+
+	/* a caixa sempre mide 200px de borde a borde por estar
+	   en modo border-box
+	*/
+}
+

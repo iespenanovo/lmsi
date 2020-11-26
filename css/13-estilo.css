@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+	/* con esta regra poñemos todalas caixas 
+	   en modo ancho en base a bordes, é dicir
+	   a propiedade width indica o ancho dende 
+	   o borde esquerdo ata o dereito
+	*/
+}
+
+h1,h2,h3,h4,h5,h6 {
+	text-align: center;
+}
+
+#c1 {
+	width: 80%;
+	height: 300px;
+	border: 1px solid grey;
+	margin: 10px auto;
+	padding: 15px;
+	background-image: url(../img/help.ico);
+	background-size: 20%; /* o porcentexe é respecto do tamaño da caixa */
+	background-position: right top;
+	background-repeat: repeat-y;
+
+	background-color: lightblue;
+
+
+
+}
