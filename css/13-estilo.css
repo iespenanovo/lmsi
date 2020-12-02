@@ -11,19 +11,45 @@ h1,h2,h3,h4,h5,h6 {
 	text-align: center;
 }
 
-#c1 {
+#c1, #c2, #c3 {
 	width: 80%;
-	height: 300px;
-	border: 1px solid grey;
 	margin: 10px auto;
+	border: 1px solid grey;	
+	height: 300px;
+}
+#c1 {
 	padding: 15px;
 	background-image: url(../img/help.ico);
 	background-size: 20%; /* o porcentexe é respecto do tamaño da caixa */
 	background-position: right top;
 	background-repeat: repeat-y;
-
 	background-color: lightblue;
+}
 
+#c2 {
+	padding: 30px; 
+	background: lightyellow url(../img/help.ico) center 90% no-repeat;
+	background-size: 15%;
+}
 
+#c3 {
+	padding: 25%;
+	height: auto;
+
+	background: url(../img/html5.png) 0% 0% repeat-y,
+				url(../img/help.ico) 100% 0% repeat-y,
+				url(../img/animada.gif) 50% 100% no-repeat
+				;
+
+	
+	background-size: 20%, 40%, 25%;	
+	/* os tamaños se corresponden co orde das imaxes 
+	da propiedade background, é dicir: 20% para html5.png e 
+	40% para help.ico e 25% para animada.gif;  */			
+
+   	background-color: lightgrey;
 
 }
+
+
+
