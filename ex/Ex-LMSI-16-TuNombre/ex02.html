@@ -14,7 +14,51 @@
 		Ctrl+Shift+A ->selecciona contenido etiqueta (recursivo)
 		Alt+Shift+W ->envuelve selección con etiqueta deseada
  -->
-	<div id="contenedor"></div>
+	<div id="contenedor">
+
+		<table>
+			<caption>Tabla examen</caption>
+
+			<!-- tr>td{A.$}*5 -->
+			<tr>
+				<td>A.1</td>
+				<td>A.2</td>
+				<td>A.3</td>
+				<td colspan="2">A.4 - A.5</td>
+				<!-- <td>A.5</td> -->
+			</tr>
+			<tr>
+				<td>B.1</td>
+				<td rowspan="3">B.2 - D.2</td>
+				<td>B.3</td>
+				<td>B.4</td>
+				<td>B.5</td>
+			</tr>
+			<tr>
+				<td>C.1</td>
+				<!-- <td>C.2</td> -->
+				<td>C.3</td>
+				<td>C.4</td>
+				<td>C.5</td>
+			</tr>
+			<tr>
+				<td>D.1</td>
+				<!-- <td>D.2</td> -->
+				<td>D.3</td>
+				<td colspan="2" rowspan="2"><a href="doc/ex-lmsi-2016.pdf" target="_blank">D.4 - E.5</a></td>
+				<!-- <td>D.5</td> -->
+			</tr>
+			<tr>
+				<td>E.1</td>
+				<td>E.2</td>
+				<td>E.3</td>
+				<!-- <td>E.4</td> -->
+				<!-- <td>E.5</td> -->
+			</tr>
+
+		</table>
+
+	</div>	
 <!-- 			Tabla examen
 			
 				A.1
