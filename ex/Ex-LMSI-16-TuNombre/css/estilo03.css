@@ -10,4 +10,37 @@ body {
 	padding: 20px;
 	margin: 50px auto;
     background-color: #fff;
+
+    overflow: auto;
+}
+h1 {
+	text-align: center;
+}
+
+.campos {
+	padding: 9px;
+}
+
+label[for] {
+	color: blue;
+}
+
+.bloque {
+	width: 48%;
+	margin: 1%;
+	border: 1px solid blue;
+	padding: 15px;
+	height: 150px;
+	background: url("../img/fondo1.jpg") center center;
+	float: left;
+}
+
+input[type="submit"] {
+	background-color: blue;
+	color: white;
+	padding: 5px 25px;
+	font-weight: bold;
+
+	border-radius: 15px;
+	float: right;
 }

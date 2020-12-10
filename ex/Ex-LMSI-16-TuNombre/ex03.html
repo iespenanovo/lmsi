@@ -12,15 +12,58 @@
 <!-- 	Ayuda de teclas rápidas de SublimeText:	
 		Ctrl+Shift+A ->selecciona contenido etiqueta (recursivo)
 		Alt+Shift+W ->envuelve selección con etiqueta deseada
- -->
+	-->
 
 	<div id="contenedor">
+		<h1>Formulario examen</h1>
+		<div class="bloque">
+			<div class="campos">
+				<label for="cnome">Nombre:</label>
+				<input id="cnome" type="text" name="nome" required placeholder="Escribe tu nombre">
+			</div>			
+			<div class="campos">
+				<label for="cape">Apellidos:</label>
+				<input id="cape" type="text" name="ape" required placeholder="Escribe tus apelllidos">
+			</div>	
+			<div class="campos">
+				<label >Sexo</label>
+				<label for="chome">Hombre</label>
+				<input id="chome" type="radio" name="sexo" value="H">
+				<label for="cmuller">Mujer</label>
+				<input id="cmuller" type="radio" name="sexo" value="M" > 
+				<!-- o atributo checked permite marcar por defecto unha opción de radio -->
+
+			</div>						
+		</div>
+		<div class="bloque">
+				<div class="campos">
+					<label class="etiqueta" for="cpais">Pais</label>
+					<select name="pais" id="cpais">
+						<option value=""></option>
+						<option value="es">España</option>
+						<option value="fr">Francia</option>
+						<option value="pt">Portugal</option>
+					</select>
+				</div>
+			<div class="campos">
+				<label class="etiqueta">Deportes</label>
+				<label for="f">Fútbol</label>
+				<input id="f" type="checkbox" value="ft" name="dep[]">
+				<label for="n">Natación</label>
+				<input id="n" type="checkbox" value="nt" name="dep[]">
+			</div>				
+			<div class="campos">
+				<input type="submit" value="Enviar" >
+			</div>
+			
+		</div>
+
 
 	</div> <!-- fin div #contenedor -->
 
- 	<div style="margin:0 auto;width:700px;text-align:center" >
- 	<h3>Crea un formulario con estructura y apariencia similar al de la imagen:</h3>	
-	<a href="img/ejercicio03.jpg" target="_blank"><img src="img/ejercicio03.jpg" style="width:100%;padding:5px;"></a>
+	<div style="margin:0 auto;width:700px;text-align:center" >
+		<h3>Crea un formulario con estructura y apariencia similar al de la imagen:</h3>	
+		<a href="img/ejercicio03.jpg" target="_blank"><img src="img/ejercicio03.jpg" style="width:100%;padding:5px;"></a>
 	</div>
 	
 </body>
