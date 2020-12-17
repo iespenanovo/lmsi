@@ -1,0 +1,24 @@
+img {
+	border: 1px solid tomato;
+}
+
+#ix2 {
+	position: relative;
+	/* desprazamos 50px abaixo e 80 dereita */
+	/*top: 50px; */
+	/*left: 80px;*/
+	bottom: -50px; 
+	right: -80px;
+
+	/*ter en conta que:
+	top=-bottom
+	left=-right
+	 */
+}
+#ix1 {
+	/* desprazamos 75 esquerda e 50 arriba */
+	position: relative;
+	right: 75px; /* tamén vale left:-75px */
+	bottom: 50px; /* tamén vale top:-50px */
+}
+
