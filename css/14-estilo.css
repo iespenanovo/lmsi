@@ -2,6 +2,24 @@ img {
 	border: 1px solid tomato;
 }
 
+h1, h3 , h4 {
+	text-align: center;
+}
+.contenedor1, .contenedor2, .contenedor3 {
+	width: 90%;
+	margin: 0 auto;
+	border: 2px dotted blue;
+}
+
+.contenedor2 {
+	position: relative;
+	/*
+	dando posicionamento distinto de estático, conseguimos
+	que os descendentes deste elemento con posicionamento
+	absoluto, se posicionen respecto del
+	*/
+}
+
 #ix2 {
 	position: relative;
 	/* desprazamos 50px abaixo e 80 dereita */
@@ -22,3 +40,56 @@ img {
 	bottom: 50px; /* tamén vale top:-50px */
 }
 
+#p1 {
+	position: relative;
+	top: -100px; /* despraza 100 */
+}
+
+/*no posicionamento relativo, o espazo que queda libre
+non é utilizado por outros elementos
+*/
+
+#iz1 {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+#iz2 {
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+}
+#iy1 {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+#iy2 {
+	position: absolute;
+	left: 100px;
+	top: 5px;
+}
+/* no posicionamento absoluto, o espazo liberado, 
+o utilizan outros elementos */
+
+/* o posicionamentno absoluto e con referencia ao
+primeiro ascendente que teña un posicionamento distinto
+a estático. De non encontrarse, se posicionará con 
+relación ao body (como lle pasa a iy1 e iy2, 
+pois seu ascendente ('contenedor3') ten un posicionamento
+estático, e non hai máis acendentes, chegando ao body.
+
+Diferente é o caso de iz1 e iz2, que se posicionan 
+respecto de 'contenedor2' que ten un posicionamento 
+distinto de estático (neste caso relativo)
+*/
+
+#if1{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+/*o posicionamento fixo, se fai respecto do body,
+aínda que o acendente teña posicionamento distinto 
+de estático */
