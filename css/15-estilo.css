@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	text-align: center;
+}
+
+#contenedor1, #contenedor2, #contenedor3 {
+	border:1px solid red;
+	overflow: hidden; /* Esta propiedade 
+	evita que os elementos flotantes que están
+	dentro de este elemento, deixen de ocupar 
+	espazo (visualmente falando) */
+}
+
+
+#contenedor1 p {
+	border:1px solid blue;
+	width: 33%;
+	float: left;
+	padding: 0 10px;
+}
+
+#contenedor2 p {
+	border:1px solid blue;
+	width: 33%;
+	float: right;
+	padding: 0 10px;	
+}
+
+.limpar {
+	clear: both;/* elimina o posicionamento 
+	flotante pola esquerda e dereita. Tamén 
+	podemos indicar left ou right se so queremos 'limpar'
+	un dos lados */
+}
+.esq {
+	float: left;
+}
+.dta {
+	float: right;
+}

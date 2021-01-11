@@ -38,6 +38,11 @@ h1, h3 , h4 {
 	position: relative;
 	right: 75px; /* tamén vale left:-75px */
 	bottom: 50px; /* tamén vale top:-50px */
+	z-index: 10; /* a propiedade z-index, indica en capa se atopa a caixa*/
+	/* se varias caixas están superpostas, se verá a que teña
+	un valor z-index máis alto*/
+	/* o valor z-index en un número enteiro, positivo ou negativo/*
+
 }
 
 #p1 {
@@ -58,6 +63,7 @@ non é utilizado por outros elementos
 	position: absolute;
 	left: 5px;
 	bottom: 5px;
+	z-index: 10; 
 }
 #iy1 {
 	position: absolute;
