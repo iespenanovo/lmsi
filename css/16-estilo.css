@@ -1,0 +1,41 @@
+* {
+	box-sizing: border-box;
+}
+
+#contenedor {
+	width: 80%;
+	min-width: 600px;
+	border:1px solid green;
+	margin: 0 auto;
+}
+
+#cab {
+	border:1px dotted grey;
+	overflow: hidden;
+}
+
+#cab img {
+	float: left;
+}
+#cab nav {
+	float: right;
+	margin-top: 20px;
+}
+#cab nav a {
+	padding-left: 8px;
+}
+.limpar_float {
+	clear: both;
+}
+
+/*#corpo #contido*/
+#contido {
+	border:1px solid grey;
+	width: 75%;
+	float: left;
+}
+#barra {
+	border:1px solid grey;
+	width: 25%;
+	float: left;
+}
