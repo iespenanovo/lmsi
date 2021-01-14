@@ -5,12 +5,15 @@
 #contenedor {
 	width: 80%;
 	min-width: 600px;
-	border:1px solid green;
+	max-width: 1200px;
+	/*border:1px solid green;*/
 	margin: 0 auto;
 }
 
 #cab {
-	border:1px dotted grey;
+	/*border:1px dotted grey;*/
+	border-bottom: 1px solid grey;
+	margin-bottom: 9px;
 	overflow: hidden;
 }
 
@@ -30,12 +33,36 @@
 
 /*#corpo #contido*/
 #contido {
-	border:1px solid grey;
+	/*border:1px solid grey;*/
 	width: 75%;
 	float: left;
 }
+#contido article {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+#contido article p {
+	text-align: justify;
+	padding: 9px;
+}
+
+#contido article img {
+	width: 80%;
+	max-width: 250px;
+}
+
 #barra {
-	border:1px solid grey;
+	/*border:1px solid grey;*/
 	width: 25%;
 	float: left;
+	text-align: center;
+}
+#barra img {
+	width: 90%;
+	max-width: 200px;
+}
+#barra ul {
+	list-style-type: none;
+	padding: 0;
 }
