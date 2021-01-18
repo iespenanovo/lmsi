@@ -62,7 +62,14 @@
 	width: 90%;
 	max-width: 200px;
 }
-#barra ul {
+#barra ul, #pe ul {
 	list-style-type: none;
 	padding: 0;
+}
+#pe div {
+	border-top: 1px solid grey;
+	width: 33.33%;
+	float: left;
+	text-align: center;
+
 }
