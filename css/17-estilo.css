@@ -5,12 +5,45 @@
 .contenedorFlex{
 	border:2px solid red;
 	display: flex;
-	flex-direction: row; /*por defecto 
+	flex-direction: row; /*por defecto  	
 	/*flex-direction: row-reverse; */
 	/*flex-direction: column;*/
-	/*flex-direction: column-reverse;*/
+	/*flex-direction: column-reverse;
 	/*flex-wrap: nowrap; /* por defecto */
-	flex-wrap: wrap; 
+	flex-wrap: wrap;  /* permite salto de liña dos items */
+	/*flex-wrap: wrap-reverse; */
+	height: 500px;
+
+	/*aliñación dos itmes no eixe principal:*/
+	/*justify-content: flex-start; /* por defecto */
+	/*justify-content: flex-end;*/
+	/*justify-content: center;*/
+	/*justify-content: space-between;*/
+	justify-content: space-around;
+
+	/*aliñación no eixe transversal*/
+	/* para aliñar o eixe transversal no caso
+	varias liñas se usa align-content*/
+
+	/*align-content: stretch; /*por defecto*/
+	/*align-content : flex-start;*/
+	/*align-content: flex-end;*/
+	/*align-content: center;*/
+	/*align-content: space-between;*/
+	align-content: space-around;
+
+}
+.contenedorFlex2 {
+	display: flex;
+	border: 2px solid green;
+	height: 400px;
+	/* para aliñar o eixe transversal no caso
+	dunha sola liña se usa align-items*/
+	align-items: stretch; /*por defecto*/
+
+	justify-content: space-between;
+
+
 }
 
 .itemFlex{
@@ -19,5 +52,7 @@
 	color : blue;
 	text-align: center;
 	padding: 10px;
+	width: 15%;
+	/*height: 80px;*/
 
 }
