@@ -46,6 +46,31 @@
 
 }
 
+
+.contenedorFlex3 {
+	display: flex;
+	border: 2px solid green;
+	height: 400px;
+	/* para aliñar o eixe transversal no caso
+	dunha sola liña se usa align-items*/
+	align-items: flex-start;
+	column-gap: 5px;
+
+}
+ #i3{
+ 	align-self: center;
+ 	background-color: tomato;
+ 	flex-grow: 2;
+ }
+ #i6 {
+ 	flex-grow: 1;
+ }
+
+.contenedorFlex3 .itemFlex {
+	flex-basis: 10%;
+}
+
+
 .itemFlex{
 	border:1px solid blue;
 	font-size: 2rem;
