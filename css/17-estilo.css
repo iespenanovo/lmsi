@@ -47,7 +47,7 @@
 }
 
 
-.contenedorFlex3 {
+.contenedorFlex3, .contenedorFlex4 {
 	display: flex;
 	border: 2px solid green;
 	height: 400px;
@@ -64,12 +64,27 @@
  }
  #i6 {
  	flex-grow: 1;
+	background-color: tomato;
  }
 
 .contenedorFlex3 .itemFlex {
 	flex-basis: 10%;
 }
+.contenedorFlex4 .itemFlex {
+	flex-basis: 20%;
+}
 
+#i3b {
+	flex-shrink: 3;
+	background-color: tomato;
+	order: 1;
+
+}
+#i6b {
+	flex-shrink: 2;
+	order: -1;
+	background-color: tomato;
+}
 
 .itemFlex{
 	border:1px solid blue;

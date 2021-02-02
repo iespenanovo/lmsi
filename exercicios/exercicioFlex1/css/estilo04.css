@@ -1,0 +1,62 @@
+/* Escribe aquí tu CSS para la página web ex04.html */
+body {
+	font-size: 1.2em;
+	background-color: #ddd;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#contenedor {
+	width: 1200px;
+	background-color: #fff;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+#cabecera {
+	width: 100%;
+	background-color: coral;
+	padding: 25px;
+	display: flex;	
+	justify-content: space-between;
+
+}
+
+#principal {
+	width: 1000px;
+	padding: 15px;
+
+}
+
+#principal .articulos {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#principal .articulos article {
+	width: 50%;
+	padding: 10px;
+}
+
+
+
+#complementario {
+	background-color: DarkSeaGreen;
+	width: 200px;
+	padding: 15px;
+
+}
+
+#pie {
+	background-color: #000;
+	color: #fff;
+	display: flex;
+}
+
+#pie div {
+	width: 400px;
+	padding: 15px;
+
+}
