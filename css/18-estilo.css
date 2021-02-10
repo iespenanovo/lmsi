@@ -1,0 +1,15 @@
+* {
+	box-sizing: border-box;
+}
+
+#contedor {
+	display: flex;
+	border: 1px solid blue;
+}
+
+#contedor div {
+	font-size: 3rem;
+	text-align: center;
+	padding: 20px;
+	border: 1px solid grey;
+}
