@@ -3,7 +3,10 @@
 }
 
 #contedor {
+	width: 70%;
+	margin: auto;
 	display: flex;
+	flex-wrap: wrap;
 	border: 1px solid blue;
 }
 
@@ -12,4 +15,27 @@
 	text-align: center;
 	padding: 20px;
 	border: 1px solid grey;
+	flex-basis: 12.5%; /* 8 columnas -> 12.5 * 8 = 100% */
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {	
+	#contedor {
+		width: 80%;
+		border: 1px solid green;
+	}
+
+	#contedor div {
+		flex-basis: 20%; /* 5 columnas -> 20*5=100%*/
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {	
+	#contedor {
+		width: 90%;
+		border: 1px solid grey;
+	}
+
+	#contedor div {
+		flex-basis: 25%; /* 4 columnas -> 25*4=100%*/
+	}
 }
