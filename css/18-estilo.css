@@ -18,6 +18,9 @@
 	flex-basis: 12.5%; /* 8 columnas -> 12.5 * 8 = 100% */
 }
 
+/*todo o css anterior o temos pensado para escritorios extra grandes*/
+
+/*bloque css para escritorios grandes*/
 @media (min-width: 1200px) and (max-width: 1399.98px) {	
 	#contedor {
 		width: 80%;
@@ -29,13 +32,50 @@
 	}
 }
 
+/*Para escritorios*/
 @media (min-width: 992px) and (max-width: 1199.98px) {	
 	#contedor {
 		width: 90%;
-		border: 1px solid grey;
+		border: 1px solid yellow;
 	}
 
 	#contedor div {
 		flex-basis: 25%; /* 4 columnas -> 25*4=100%*/
+	}
+}
+
+/*Para tablets:*/
+@media (min-width: 768px) and (max-width: 991.98px) {	
+	#contedor {
+		width: 95%;
+		border: 1px solid tomato;
+	}
+
+	#contedor div {
+		flex-basis: 33.33%; /* 3 columnas -> 33.33*3=100%*/
+	}
+}
+
+/*Para teléfonos e similar:*/
+@media (min-width: 576px) and (max-width: 767.98px) {	
+	#contedor {
+		width: 100%;
+		border: 1px solid red;
+	}
+
+	#contedor div {
+		flex-basis: 50%; /* 2 columnas -> 50*2=100%*/
+	}
+}
+
+/*Para dispositivos moi pequenos:*/
+@media (max-width: 575.98px) {	
+	#contedor {
+		width: 100%;
+		border: 1px solid black;
+	}
+
+	#contedor div {
+		flex-basis: 100%; /* 1 columnas -> 100*1=100%*/
 	}
 }
