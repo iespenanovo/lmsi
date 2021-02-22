@@ -1,0 +1,89 @@
+/* método responsive Mobile first-> prioridade a dispositivos pequenos*/
+* {
+	box-sizing: border-box;
+}
+
+#contedor {
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid blue;
+}
+
+#contedor div {
+	font-size: 3rem;
+	text-align: center;
+	padding: 20px;
+	border: 1px solid grey;
+	flex-basis: 100%; /* 1 columnas -> 100% * 1 = 100% */
+}
+
+/* X-Small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+	#contedor div {
+		flex-basis: 50%; /* 2 columnas -> 50*2=100%*/
+	}	
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	#contedor {
+		width: 90%;
+	}
+
+	#contedor div {
+		flex-basis: 33.3%; /* 3 columnas -> 33.3 * 3 = 100%*/
+	}	
+
+	#contedor div:first-child, #contedor div:nth-child(2) { /* so aplicaría ao primeiro div*/
+		flex-basis: 25%; 
+	}	
+
+	#contedor div:nth-child(3) { /* so aplicaría ao terceiro div*/
+		flex-basis: 50%; 
+	}
+
+	#contedor div:last-child { /* so aplicaría ao segundo div*/
+		flex-basis: 66.6%; 
+	}	
+
+
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	#contedor {
+		width: 80%;
+	}
+
+	#contedor div {
+		flex-basis: 20% !important; /* 5 columnas -> 20 * 5 = 100%*/
+	}	
+
+}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	#contedor {
+		width: 70%;
+	}
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+	#contedor {
+		width: 60%;
+	}
+
+	#contedor div {
+		flex-basis: 12.5% !important; /* 8 columnas -> 12.5 * 8 = 100%*/
+	}	
+
+}
+
