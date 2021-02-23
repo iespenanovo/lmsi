@@ -1,0 +1,52 @@
+/* método responsive Mobile first-> prioridade a dispositivos pequenos*/
+* {
+	box-sizing: border-box;
+}
+
+#cont1 {
+	background-color: #141a22; 
+	color: #fff; /*white*/
+}
+
+#cont1a {
+	width: 100%;
+	margin: auto;
+}
+ #cont1a h1 {
+ 	font-size: 3rem;
+ 	text-align: center;
+ 	padding: 100px 0 25px;
+ }
+
+ #cont1a #tipos {
+ 	text-align: center;
+ 	display: flex;
+ 	flex-wrap: wrap;
+ }
+
+ #cont1a #tipos div {
+ 	flex-basis: 100%;
+ 	padding: 30px 0;
+ 	color: black;
+ }
+
+ #cont1a #tipos div:first-child {
+ 	background-color: white;
+ }
+ #cont1a #tipos div:nth-child(2) {
+ 	background-color: rgb(224,175,24); /* e0af4a */
+ }
+ #cont1a #tipos div:nth-child(3) {
+ 	background-color: rgb(248,114,35); /* f87223 */
+ }
+
+  #cont1a #tipos div:last-child {
+ 	background-color: rgb(40,51,65); /* 283341 */
+ 	color: white;
+ }
+
+ #cont1a #apetizers h1, #cont1a #classic h1 {
+	text-align: left; 	
+	font-size: 1.5rem;
+
+ }
