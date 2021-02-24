@@ -22,6 +22,7 @@
  	text-align: center;
  	display: flex;
  	flex-wrap: wrap;
+ 	margin-bottom: 80px;
  }
 
  #cont1a #tipos div {
@@ -48,5 +49,24 @@
  #cont1a #apetizers h1, #cont1a #classic h1 {
 	text-align: left; 	
 	font-size: 1.5rem;
+	padding: 10px 0;
 
  }
+
+#cont1a #apetizers .cont {
+	background-color: white;
+	color: black;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#cont1a #apetizers .cont div {
+	flex-basis: 100%;
+	padding: 15px;
+}	
+
+#cont1a #apetizers .cont div h4 {
+	text-transform: uppercase;
+	font-family: courier;
+	letter-spacing: 2px;
+}	
