@@ -12,46 +12,46 @@
 	width: 100%;
 	margin: auto;
 }
- #cont1a h1 {
- 	font-size: 3rem;
- 	text-align: center;
- 	padding: 100px 0 25px;
- }
+#cont1a h1 {
+	font-size: 3rem;
+	text-align: center;
+	padding: 100px 0 25px;
+}
 
- #cont1a #tipos {
- 	text-align: center;
- 	display: flex;
- 	flex-wrap: wrap;
- 	margin-bottom: 80px;
- }
+#cont1a #tipos {
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 80px;
+}
 
- #cont1a #tipos div {
- 	flex-basis: 100%;
- 	padding: 30px 0;
- 	color: black;
- }
+#cont1a #tipos div {
+	flex-basis: 100%;
+	padding: 30px 0;
+	color: black;
+}
 
- #cont1a #tipos div:first-child {
- 	background-color: white;
- }
- #cont1a #tipos div:nth-child(2) {
- 	background-color: rgb(224,175,24); /* e0af4a */
- }
- #cont1a #tipos div:nth-child(3) {
- 	background-color: rgb(248,114,35); /* f87223 */
- }
+#cont1a #tipos div:first-child {
+	background-color: white;
+}
+#cont1a #tipos div:nth-child(2) {
+	background-color: rgb(224,175,24); /* e0af4a */
+}
+#cont1a #tipos div:nth-child(3) {
+	background-color: rgb(248,114,35); /* f87223 */
+}
 
-  #cont1a #tipos div:last-child {
- 	background-color: rgb(40,51,65); /* 283341 */
- 	color: white;
- }
+#cont1a #tipos div:last-child {
+	background-color: rgb(40,51,65); /* 283341 */
+	color: white;
+}
 
- #cont1a #apetizers h1, #cont1a #classic h1 {
+#cont1a #apetizers h1, #cont1a #classic h1 {
 	text-align: left; 	
 	font-size: 1.5rem;
 	padding: 10px 0;
 
- }
+}
 
 #cont1a #apetizers .cont {
 	background-color: white;
@@ -70,3 +70,55 @@
 	font-family: courier;
 	letter-spacing: 2px;
 }	
+
+#cont1a #classic .cont {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#cont1a #classic .cont div {
+	flex-basis: 100%;
+	background-color: grey;
+	margin-bottom: 10px;
+}
+
+#cont1a #classic .cont div img {
+	width: 100%;
+}
+
+#cont1a #classic .cont div h3 {
+	padding-left: 15px;
+	letter-spacing: 2px;
+}
+#cont1a #classic .cont div p {
+	padding-left: 15px;
+	color: tomato;
+	font-weight: bold;
+}
+
+#cont1b {
+	background: url(../img/fondopizza.jpg) center center;
+	text-align: center;
+}
+
+#cont1b h1 {
+	font-size: 5rem;
+	padding: 100px 0;
+	color: tomato; 
+}
+
+#cont1b p {
+	color: black;
+	font-size: 3rem;
+}
+
+#cont1b a {
+	padding: 15px;
+	font-size: 2rem;
+	background-color: orange;
+	color: white;
+	width: 50%;
+	display: inline-block;
+	margin: 25px 0;
+
+}
