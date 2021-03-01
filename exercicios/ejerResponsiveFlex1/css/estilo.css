@@ -74,6 +74,7 @@
 #cont1a #classic .cont {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;	
 }
 
 #cont1a #classic .cont div {
@@ -99,6 +100,7 @@
 #cont1b {
 	background: url(../img/fondopizza.jpg) center center;
 	text-align: center;
+	padding-bottom: 10px;
 }
 
 #cont1b h1 {
@@ -112,7 +114,7 @@
 	font-size: 3rem;
 }
 
-#cont1b a {
+#cont1b a, #cont1c a {
 	padding: 15px;
 	font-size: 2rem;
 	background-color: orange;
@@ -120,5 +122,82 @@
 	width: 50%;
 	display: inline-block;
 	margin: 25px 0;
+}
+#cont1c{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+}
+
+#cont1c div {
+	flex-basis: 100%;
+	padding-left: 10px; 
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+	#cont1a, #cont1c {
+		width: 95%;
+	}
+
+	#cont1a #tipos div {
+		flex-basis: 50%;
+	}
+
+	#cont1a #apetizers .cont div {
+		flex-basis: 50%;
+	}
+
+	#cont1a #classic .cont div {
+		flex-basis: 49%;
+	}
 
 }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	#cont1a, #cont1c {
+		width: 90%;
+	}
+
+	#cont1a #apetizers .cont div {
+		flex-basis: 33.3%;
+	}
+
+	#cont1a #classic .cont div {
+		flex-basis: 32.5%;
+	}
+
+	#cont1c div {
+		flex-basis: 33.3%;
+	}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	#cont1a, #cont1c {
+		width: 80%;
+	}
+
+	#cont1a #tipos div {
+		flex-basis: 25%;
+	}
+}
+
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	#cont1a, #cont1c {
+		width: 70%;
+	}	
+}
+
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+	#cont1a, #cont1c {
+		width: 60%;
+	}	
+
+}	
