@@ -1,0 +1,24 @@
+/* 
+Página para estilos propios (style.css)
+*/
+
+#menu {
+
+	background-color: #d9edf7;
+}
+
+
+
+/* Pon los estilos que faltan a partir de aquí : */
+
+#alumnos {
+	background-color: #337ab7; /*azul primary de bootstrap*/
+}
+
+#pie {
+	background-color: #000;
+}
+	
+#contacto {
+	background-color: #337ab7; /*azul primary de bootstrap*/
+}
