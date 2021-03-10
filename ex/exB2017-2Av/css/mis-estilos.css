@@ -2,12 +2,52 @@
 Página para estilos propios (style.css)
 */
 
-#menu {
+* {
+	box-sizing: border-box;
+}
 
-	background-color: #d9edf7;
+#carousel-example-generic {
+	display: none;
 }
 
 
+#menu {
+
+	background-color: #d9edf7;
+	padding: 10px 0;
+}
+
+	#menu #menu-cont {
+		width: 90%;
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	#menu img {
+		width: 100%;
+		padding-top: 10px;
+	}
+
+	#menu #menu-cont>div {
+		width: 100%;
+	}
+	#menu #menu-cont>div:nth-child(1) {
+		width: 30%;
+	}
+	#menu #menu-cont>div.oculto {
+		display: none;
+	}	
+
+
+	#menu .btn-group {
+		margin-top: 12px;
+	}
+	#menu .btn {
+		font-size: 1.2em;
+	}
 
 /* Pon los estilos que faltan a partir de aquí : */
 
@@ -22,3 +62,44 @@ Página para estilos propios (style.css)
 #contacto {
 	background-color: #337ab7; /*azul primary de bootstrap*/
 }
+
+
+/*Para tablets:*/
+@media (min-width: 768px) {
+
+	#menu #menu-cont {
+		justify-content: space-between;
+	}
+	#menu #menu-cont>div {
+		width: 75%;
+	}
+	#menu #menu-cont>div:nth-child(1) {
+		width: 20%;
+	}
+	#menu #menu-cont>div.oculto {
+		display: block;
+		width: 20%;
+		/*border:1px solid blue;*/
+	}	
+
+
+}
+
+
+/*Para escritorios*/
+@media (min-width: 992px) {
+	#carousel-example-generic {
+		display: block;
+	}
+	#menu #menu-cont>div {
+		width: 40%;
+	}
+	#menu #menu-cont>div:nth-child(1) {
+		width: 15%;
+	}
+	#menu #menu-cont>div.oculto {
+		display: none;
+		/*border:1px solid blue;*/
+	}	
+
+}	
