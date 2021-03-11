@@ -2,86 +2,204 @@
 Página para estilos propios (style.css)
 */
 
-* {
-	box-sizing: border-box;
-}
+/* Pon los estilos que faltan a partir de aquí : */
+
 
 #carousel-example-generic {
 	display: none;
 }
 
-
 #menu {
-
-	background-color: #d9edf7;
 	padding: 10px 0;
+	background-color: #d9edf7;
 }
-
-	#menu #menu-cont {
+	#menu #menu-cont, #alumnos #alumnos-cont, #pie #pie-cont, #contacto #contacto-cont {
 		width: 90%;
 		max-width: 1200px;
 		margin: 0 auto;
+		/*border: 2px solid #f00;*/
+
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+	#menu #menu-cont {
 		justify-content: center;
 	}
 
-	#menu img {
-		width: 100%;
-		padding-top: 10px;
-	}
-
-	#menu #menu-cont>div {
-		width: 100%;
-	}
-	#menu #menu-cont>div:nth-child(1) {
-		width: 30%;
-	}
-	#menu #menu-cont>div.oculto {
-		display: none;
-	}	
-
-
 	#menu .btn-group {
-		margin-top: 12px;
+		margin-top:  12px;
+	}
+	#menu img, #alumnos img  {
+		/*margin: 0 auto; */
+		padding-top: 10px;
+		width: 100%;
 	}
 	#menu .btn {
 		font-size: 1.2em;
 	}
 
-/* Pon los estilos que faltan a partir de aquí : */
+
+	#menu #menu-cont>div.oculto {
+		display: none;
+	} 
+
+	#menu #menu-cont>div {
+		width: 100%;
+		/*border: 1px solid red;*/
+	} 
+
+
+	#menu #menu-cont>div:nth-child(1) { /* item flex do logo*/ 
+		width: 30%;
+	}
+
 
 #alumnos {
 	background-color: #337ab7; /*azul primary de bootstrap*/
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
 }
+
+
+	#alumnos #alumnos-cont div {
+		padding: 5px;
+		border: 5px dotted transparent;		
+		width: 45%; 
+
+	}
+
+	#alumnos #alumnos-cont div:hover {
+		border: 5px dotted #fff;
+	}
+
+	#alumnos h1 {
+		font-weight: 900;
+	}
+
+
 
 #pie {
 	background-color: #000;
+	padding: 20px 0;
+	color:#ccc;
 }
+	
+	#pie #pie-cont div {
+		width: 100%;
+		/*border: 1px solid white;*/
+	}
+	#pie #pie-cont div:nth-child(3) {
+		width: 30% ;
+	}		
+
+	#pie #pie-cont img {
+		width: 100%;
+		margin-top: 40px;
+	}
+
+	#pie #pie-cont ul {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	#pie #pie-cont a {
+		color:#ccc;
+	}	
+
+	#pie #pie-cont table {
+		width: 100%;
+	}	
+	
+	#pie #pie-cont table tr {
+		border-top: 1px solid #ccc;
+	}	
+	#pie #pie-cont table td, #pie #pie-cont table th {
+		padding: 5px 0;
+	}	
+	#pie #pie-cont table tr:hover {
+		background-color: #ccc;
+		color: #000;
+	}	
+	
 	
 #contacto {
 	background-color: #337ab7; /*azul primary de bootstrap*/
+	color: #fff;
+	padding: 20px 0;
 }
+
+	#contacto #contacto-cont>h1 {
+		width: 100%;
+		/*border: 1px solid white;*/
+	}
+
+	#contacto #contacto-cont>div {
+		width: 100%;
+		/*border: 1px solid white;*/
+	}
+
+	#contacto #contacto-cont label {
+		display: block;
+	}	
+	#contacto #contacto-cont label.enlinea {
+		display: inline-block;
+	}	
+
+	#contacto #contacto-cont .campo {
+		margin-bottom: 15px;
+	}	
+
+	#contacto #contacto-cont input, #contacto #contacto-cont textarea {
+		width: 100%;
+		color: black;
+	}	
+
+	#contacto #contacto-cont input[type="submit"],#contacto #contacto-cont input[type="checkbox"] {
+		width: auto;
+	}
+
 
 
 /*Para tablets:*/
 @media (min-width: 768px) {
-
-	#menu #menu-cont {
+	#menu #menu-cont{
 		justify-content: space-between;
-	}
-	#menu #menu-cont>div {
-		width: 75%;
-	}
-	#menu #menu-cont>div:nth-child(1) {
-		width: 20%;
-	}
+	}	
+
 	#menu #menu-cont>div.oculto {
 		display: block;
 		width: 20%;
-		/*border:1px solid blue;*/
+	}
+
+	#menu #menu-cont>div {
+		width: 75%;
+	}
+
+	#menu #menu-cont>div:nth-child(1) {
+		width: 20%;
+	}
+
+	
+	#alumnos #alumnos-cont div {
+		width: 30%;
+	}
+
+	#pie #pie-cont div {
+		width: 30%;
+		/*border: 1px solid white;*/
+	}
+	#pie #pie-cont div:nth-child(2) {
+		width: 60%;
 	}	
 
+
+	#contacto #contacto-cont>div {
+		width: 100%;
+		/*border: 1px solid white;*/
+	}
 
 }
 
@@ -90,16 +208,42 @@ Página para estilos propios (style.css)
 @media (min-width: 992px) {
 	#carousel-example-generic {
 		display: block;
-	}
-	#menu #menu-cont>div {
-		width: 40%;
-	}
-	#menu #menu-cont>div:nth-child(1) {
-		width: 15%;
-	}
-	#menu #menu-cont>div.oculto {
-		display: none;
-		/*border:1px solid blue;*/
 	}	
 
-}	
+	#menu #menu-cont>div {
+		width: 40%;
+		/*border: 1px solid red;*/
+	} 	
+
+	#menu #menu-cont>div.oculto {
+		display: none;
+	} 
+
+	#menu #menu-cont>div:nth-child(1) { /* item flex do logo*/ 
+		width: 15%;
+	} 
+
+	#alumnos #alumnos-cont div {
+		width: 15%; /* 6 x 15% =90 % , sobra 10% para repartir separación*/
+		/*border: 1px solid #fff;*/
+	}
+
+	#pie #pie-cont div {
+		width: 22.5%;
+		/*border: 1px solid white;*/
+	}
+	#pie #pie-cont div:nth-child(2) {
+		width: 45%;
+	}	
+	#pie #pie-cont div:nth-child(3) {
+		width: 22.5%;
+	}	
+
+	#contacto #contacto-cont>div {
+		width: 49%;
+		/*border: 1px solid white;*/
+	}
+
+
+}
+
