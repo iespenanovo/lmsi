@@ -1,0 +1,24 @@
+
+
+
+/***************************************************************************************/
+/*Esta hoja NO LA MODIFIQUES, es solo para maquetar tu nombre y el nombre del ejercicio*/
+/***************************************************************************************/
+
+/* no uses tampoco los siguentes nombres de clase en tus hojas de estilo */
+
+._nombre {
+	text-align: center; 
+	border:5px dashed red; 
+	width: 40%; 
+	margin: auto;
+	padding: 10px; 
+	color:blue;
+}
+._ejercicio {
+	margin-top: 5px; 
+	border: 5px solid blue; 
+	color:white; 
+	background-color: blue
+}
+
