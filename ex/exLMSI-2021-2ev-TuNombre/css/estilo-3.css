@@ -1,7 +1,7 @@
 /* esta es la hoja de estilo para ejer1.html */
 
 * {box-sizing: border-box;}
-
+h1 { text-align: center; }
 #contenedor {
 	background-color: lightblue;
 	padding: 100px 0;
@@ -9,25 +9,54 @@
 }
 #flex {
 	border: 1px solid tomato;
+
+	display: flex;
+	justify-content: space-between;
+
+	width: 80%;
+	margin:auto;
+
+	text-align: center;
 }
 
 .item-flex  {
-	
+	border:1px dotted grey;
+	padding: 20px 0;
+	flex-basis: 15%;
+}
 
+
+.item-flex:nth-child(1){
+	text-align: left;
+}
+
+.item-flex:nth-child(2){
+	flex-basis: 45%;
 }
 
 table {
 	margin:0 auto;
 	border-collapse: collapse;
-
+	width: 100%;
 }
 
 table th{
 	background-color: #000;
 	color: #ccc;
+	padding: 10px 0;
 
 }
 
 table td {
 	border-bottom: 1px solid black;
+	padding: 5px 0;
+}
+
+table td:hover {
+	background-color: tomato;
+	color: #fff; /* white */
+}
+
+.t4x {
+	font-size: 4rem;
 }
