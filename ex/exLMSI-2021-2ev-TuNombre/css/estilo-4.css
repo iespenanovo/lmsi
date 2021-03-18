@@ -2,17 +2,26 @@
 
 * {box-sizing: border-box;}
 
-
+h1 {
+	text-align: center;
+}
 #contenedor {
 	background-color: lightyellow;
 	padding: 100px 0;
 	margin: 50px 0;
 }
 
-h1 {
-	text-align: center;
-}
 #flex {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+
+	width: 100%; /* un div ten 100% por defecto, non secesario */
+	margin: auto;
+	justify-content: space-between;
+
+	/*border:1px solid red;*/
+
 
 }
 
@@ -20,7 +29,47 @@ h1 {
 	font-size: 3rem;
 	padding: 30px 0;
 	background-color: lightgrey;
+
+	flex-basis: 100%;
+	margin-bottom: 10px;
 }
 
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	#flex {
+		width: 90%;
+	}
 
+	.item-flex {
+		flex-basis: 31.66%;
+	}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	#flex {
+		width: 80%;
+	}
+	.item-flex {
+		flex-basis: 23.75%;
+	}
+}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	#flex {
+		width: 70%;
+	}
+	.item-flex {
+		flex-basis: 15.83%;
+	}
+	.item-flex:nth-child(1),.item-flex:nth-child(3) {
+		flex-basis: 23.75%;
+	}
+	.item-flex:nth-child(2){
+		flex-basis: 47.5%;
+	}
+
+
+}
 
