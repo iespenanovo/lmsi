@@ -1,0 +1,16 @@
+h1	{
+	text-align: center;
+}
+
+.container {
+	border: 1px dotted red;
+}
+
+.row {
+	border: 1px dashed blue;
+}
+
+div[class|="col"] { /* calquera div con atributo class que empeza por 'col' */
+	padding: 10px 0;
+	border: 1px dotted grey;
+}
