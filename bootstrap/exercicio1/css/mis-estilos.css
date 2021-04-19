@@ -17,3 +17,16 @@ Página para estilos propios (style.css)
 
 /* Pon los estilos que faltan a partir de aquí : */
 
+#alumnos {
+	color: white;
+	padding: 20px 0;
+}
+	#alumnos h1 {
+		font-weight: 900;
+	}
+	#alumnos .col-6 {
+		border: 5px dotted transparent;
+	}	
+	#alumnos .col-6:hover {
+		border: 5px dotted #fff;
+	}
