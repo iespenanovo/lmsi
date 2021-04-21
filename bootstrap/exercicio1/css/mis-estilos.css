@@ -30,3 +30,27 @@ Página para estilos propios (style.css)
 	#alumnos .col-6:hover {
 		border: 5px dotted #fff;
 	}
+
+#pie {
+	background-color: #000;
+	color: #ccc;
+	padding: 20px 0;
+
+}
+
+	#pie table {
+		color:#ccc;
+	}
+	#pie a{
+		color: #ccc;
+		text-decoration: none;
+	}
+
+	#pie img {
+		margin-top: 15px;
+	}
+
+	#pie tr:hover {
+		background-color: #ccc;
+		color:#000;
+	}

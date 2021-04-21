@@ -1,51 +1,57 @@
-<!-- zona pie, debes borrar la etiqueta h1 siguiente:-->
-<h1 style="height: 250px; padding-top: 50px; background-color: black; color:grey" class="text-center ">Zona Pie</h1>
 
+<div id="pie">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-lg-3">
+				<h3>Enlaces de interés</h3>
+				<ul class="list-unstyled">
+					<li><a href="#">Texto Enlace 1</a></li>
+					<li><a href="#">Texto Enlace 2</a></li>
+					<li><a href="#">Texto Enlace 3</a></li>
+					<li><a href="#">Texto Enlace 4</a></li>
+				</ul>
+				
+			</div>
+			<div class="col-md-8 col-lg-6">
+				<h3>Tabla de Cursos</h3>
+				<table class="table table-sm">
+					<tr>
+						<th>Clave</th>
+						<th>Denominación</th>
+						<th>Tipo</th>
+					</tr>
+					<tr>
+						<td>1234</td>
+						<td>Denominación Ciclo 1</td>
+						<td>Ciclo Superior</td>
+					</tr>
+					<tr>
+						<td>1234</td>
+						<td>Denominación Ciclo 2</td>
+						<td>Ciclo Medio</td>
+					</tr>
+					<tr>
+						<td>1234</td>
+						<td>Denominación Ciclo 3</td>
+						<td>Ciclo Superior</td>
+					</tr>
+					<tr>
+						<td>1234</td>
+						<td>Denominación Ciclo 4</td>
+						<td>Ciclo Medio</td>
+					</tr>
+				</table>				
+			</div>
 
-<!-- código facilitado para lista primera columna:
-<h3>Enlaces de interés</h3>
-<ul>
-	<li><a href="#">Texto Enlace 1</a></li>
-	<li><a href="#">Texto Enlace 2</a></li>
-	<li><a href="#">Texto Enlace 3</a></li>
-	<li><a href="#">Texto Enlace 4</a></li>
-</ul>
--->
+			<div class="col-6 col-md-3 ">
+				<a href="http://iespenanovo.com">
+					<img src="img/logoies.jpg" class="img-fluid">
+				</a>
+			</div>
+		</div>
+	</div>
 
-
-<!-- código facilitado para tabla segunda columna
-
-<h3>Tabla de Cursos</h3>
-<table>
-	<tr>
-		<th>Clave</th>
-		<th>Denominación</th>
-		<th>Tipo</th>
-	</tr>
-	<tr>
-		<td>1234</td>
-		<td>Denominación Ciclo 1</td>
-		<td>Ciclo Superior</td>
-	</tr>
-	<tr>
-		<td>1234</td>
-		<td>Denominación Ciclo 2</td>
-		<td>Ciclo Medio</td>
-	</tr>
-	<tr>
-		<td>1234</td>
-		<td>Denominación Ciclo 3</td>
-		<td>Ciclo Superior</td>
-	</tr>
-	<tr>
-		<td>1234</td>
-		<td>Denominación Ciclo 4</td>
-		<td>Ciclo Medio</td>
-	</tr>
-</table>
--->
-
-
+</div>
 
 
 
