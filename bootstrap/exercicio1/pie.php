@@ -5,10 +5,10 @@
 			<div class="col-md-4 col-lg-3">
 				<h3>Enlaces de interés</h3>
 				<ul class="list-unstyled">
-					<li><a href="#">Texto Enlace 1</a></li>
-					<li><a href="#">Texto Enlace 2</a></li>
-					<li><a href="#">Texto Enlace 3</a></li>
-					<li><a href="#">Texto Enlace 4</a></li>
+					<li><a href="#"><i class="bi bi-link-45deg"></i> Texto Enlace 1</a></li>
+					<li><a href="#"><i class="bi bi-link-45deg"></i> Texto Enlace 2</a></li>
+					<li><a href="#"><i class="bi bi-link-45deg"></i> Texto Enlace 3</a></li>
+					<li><a href="#"><i class="bi bi-link-45deg"></i> Texto Enlace 4</a></li>
 				</ul>
 				
 			</div>

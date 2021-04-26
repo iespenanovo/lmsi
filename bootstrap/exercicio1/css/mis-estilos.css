@@ -17,7 +17,7 @@ Página para estilos propios (style.css)
 
 /* Pon los estilos que faltan a partir de aquí : */
 
-#alumnos {
+#alumnos, #contacto {
 	color: white;
 	padding: 20px 0;
 }
