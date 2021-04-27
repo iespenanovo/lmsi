@@ -1,0 +1,24 @@
+/* 
+Página para estilos propios (style.css)
+*/
+
+#pie {
+	background-color: #000;
+	padding: 20px 0 20px 0;
+	color:#ccc;
+}
+#pie a{
+	color:#ccc;
+}
+#pie img {
+	margin-top: 40px;
+}
+
+#pie tr:hover {
+	background-color: #ccc;
+	color:#000;
+}
+
+/* Añade aquí: */
+
+
