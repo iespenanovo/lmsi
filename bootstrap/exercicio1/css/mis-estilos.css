@@ -5,9 +5,9 @@ Página para estilos propios (style.css)
 #menu {
 	padding: 10px 0 10px 0;
 }
-	#menu .btn-group {
+/*	#menu .btn-group {
 		margin-top:  12px;
-	}
+	}*/
 	#menu img, #alumnos img  {
 		margin: 0 auto; padding-top: 10px;
 	}
