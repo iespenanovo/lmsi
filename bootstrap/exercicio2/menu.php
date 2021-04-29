@@ -1,7 +1,21 @@
-<div id="menu" >
-
-	<!-- zona menu, debes borrar la etiqueta h1 siguiente:-->
-	<h1 style="margin:0;height: 130px; padding-top: 50px; color:#ccc" class="text-center bg-dark">Zona Menú</h1>
+<div id="menu" class="bg-dark" >
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-lg-3">
+				<a href="index.php" class="btn btn-warning w-100">Inicio</a>
+			</div>
+			<div class="col-md-6 col-lg-3">
+				<a href="cursos.php" class="btn btn-info w-100">Cursos</a>
+			</div>
+			<div class="col-md-6 col-lg-3">
+				<a href="#" class="btn btn-primary w-100">Notas</a>
+			</div>
+			<div class="col-md-6 col-lg-3">
+				<a href="index.php" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#modalContacto">Contacto</a>
+			</div>
+		</div>
+	</div>
+	
 
 
 </div>

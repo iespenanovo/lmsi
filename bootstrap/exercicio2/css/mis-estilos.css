@@ -7,18 +7,29 @@ Página para estilos propios (style.css)
 	padding: 20px 0 20px 0;
 	color:#ccc;
 }
-#pie a{
-	color:#ccc;
-}
-#pie img {
-	margin-top: 40px;
-}
+	#pie a{
+		color:#ccc;
+	}
+	#pie img {
+		margin-top: 40px;
+	}
 
-#pie tr:hover {
-	background-color: #ccc;
-	color:#000;
-}
+	#pie tr:hover {
+		background-color: #ccc;
+		color:#000;
+	}
 
+	#pie table {
+		color:#ccc;
+	}
 /* Añade aquí: */
 
+#menu {
+	padding: 10px 0 20px 0;
+}
 
+	#menu .btn {
+		font-size: 1.2rem;
+		margin-top: 12px;
+
+	}
