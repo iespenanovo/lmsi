@@ -1,5 +1,5 @@
 <!-- no tocar -->
-<div id="carousel-example-generic" class="carousel slide" data-bs-ride="carousel">
+<div id="carousel-example-generic" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
     <!-- Indicators -->
 
     <div class="carousel-indicators">
@@ -13,21 +13,21 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img class="d-block w-100" src="img/slider1.jpg" alt="...">
-            <div class="carousel-caption">
+            <div class="carousel-caption d-none d-lg-block">
                 <h2>Titulo 1</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, cumque!</p>
             </div>
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="img/slider2.jpg" alt="...">
-            <div class="carousel-caption">
+            <div class="carousel-caption d-none d-lg-block">
                 <h2>Titulo 2</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quis.</p>
             </div>
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="img/slider3.jpg" alt="...">
-            <div class="carousel-caption">
+            <div class="carousel-caption d-none d-lg-block">
                 <h2>Titulo 3</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatibus.</p>
             </div>

@@ -33,3 +33,20 @@ Página para estilos propios (style.css)
 		margin-top: 12px;
 
 	}
+
+#alumnos {
+	padding: 20px 0;
+}	
+
+	#alumnos h1 {
+		font-weight: 900;
+	}
+
+	#alumnos img {
+		border: 2px solid #fff;
+		padding: 10px;
+	}
+	#alumnos .col-6:hover {
+		border: 3px dotted #000;
+		background-color: #fff;
+	}
