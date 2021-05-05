@@ -34,7 +34,7 @@ Página para estilos propios (style.css)
 
 	}
 
-#alumnos {
+#alumnos,#cursos {
 	padding: 20px 0;
 }	
 
@@ -50,3 +50,10 @@ Página para estilos propios (style.css)
 		border: 3px dotted #000;
 		background-color: #fff;
 	}
+
+
+#cursos caption{
+	color: #000;
+	font-weight: bold;
+	padding-left: 10px;
+}
