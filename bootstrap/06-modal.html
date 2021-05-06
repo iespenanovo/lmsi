@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Modal</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">	
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Modal Bootstrap</h1>
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+					Chamar a modal 1
+				</button>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="etiquetaModal1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<!-- cabeceira da ventá modal -->
+					<h5 class="modal-title" id="etiquetaModal1">Título Modal 1</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<!-- contido do corpo da ventá modal -->
+					<p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Dolorum cumque beatae vel assumenda earum ullam nobis dicta possimus dolore eius rerum hic ipsum voluptates magnam quisquam, accusamus obcaecati labore veritatis!</p>
+
+				</div>
+				<div class="modal-footer">
+					<!-- pe da ventá modal -->
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Pechar</button>
+					<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>	
+</body>
+</html>
+
+
+
+
+

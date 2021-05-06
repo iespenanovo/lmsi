@@ -10,7 +10,7 @@
 			<div class="col-md-5 col-sm-8">
 				<div class="btn-group w-100" role="group" aria-label="...">
 					<a href="index.php" class="btn btn-light">Inicio</a>
-					<a href="" class="btn btn-primary" data-toggle="modal" data-target="#modalCursos">
+					<a href="" class="btn btn-primary" data-bs-toggle="modal"  data-bs-target="#modalCursos">
 						Cursos
 					</a>
 				</div>
