@@ -1,4 +1,29 @@
-#menu {
-	background-color: #428bca;
+#menu, #iconos, #directivos, #pe {
 	padding: 15px 0;
 }
+
+#menu {
+	background-color: #428bca;
+}
+
+#directivos {
+	background: url("../img/fondo-directiva.png");
+}
+
+#directivos h3,#directivos h5 {
+	background-color: #428bca;
+	color: #fff;
+	margin: 0;
+}
+
+
+#iconos i {
+	font-size: 3rem;
+	color: #428bca;
+}
+
+.separador {
+	background-color: #000;
+	height: 5px;
+}
+
