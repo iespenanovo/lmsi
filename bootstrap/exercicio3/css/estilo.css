@@ -1,4 +1,4 @@
-#menu, #iconos, #directivos, #pe {
+#menu, #iconos, #pe {
 	padding: 15px 0;
 }
 
@@ -7,13 +7,18 @@
 }
 
 #directivos {
+	padding: 40px 0;
 	background: url("../img/fondo-directiva.png");
+}
+#directivos img:hover {
+	border: 5px solid #428bca;
 }
 
 #directivos h3,#directivos h5 {
 	background-color: #428bca;
 	color: #fff;
 	margin: 0;
+	padding: 5px 0;
 }
 
 
@@ -22,8 +27,29 @@
 	color: #428bca;
 }
 
+#pe {
+	background-color: #1a0000;
+	color:#ccc;
+}
+
+#pe a {
+	color:#ccc;
+	text-decoration: none;
+
+}
+
+#peFila2 {
+	border-top: 1px solid #ccc;
+	padding-top: 10px;
+}
+
+#peFila2 [class|="fi-social"] {
+	font-size: 2rem;
+	padding-right: 10px;
+}
+
 .separador {
-	background-color: #000;
+	background-color: #1a0000;
 	height: 5px;
 }
 
