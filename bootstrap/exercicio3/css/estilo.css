@@ -1,4 +1,4 @@
-#menu, #iconos, #pe {
+#menu, #iconos, #pe, #quenSomos {
 	padding: 15px 0;
 }
 
@@ -46,6 +46,10 @@
 #peFila2 [class|="fi-social"] {
 	font-size: 2rem;
 	padding-right: 10px;
+}
+
+#quenSomos p {
+	text-align: justify;
 }
 
 .separador {
