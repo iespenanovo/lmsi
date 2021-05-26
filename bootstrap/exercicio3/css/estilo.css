@@ -1,4 +1,4 @@
-#menu, #iconos, #pe, #quenSomos {
+#menu, #iconos, #pe, #quenSomos, #servicios {
 	padding: 15px 0;
 }
 
@@ -22,7 +22,7 @@
 }
 
 
-#iconos i {
+#iconos i,#servicios i {
 	font-size: 3rem;
 	color: #428bca;
 }
@@ -48,7 +48,7 @@
 	padding-right: 10px;
 }
 
-#quenSomos p {
+#quenSomos p, #servicios p {
 	text-align: justify;
 }
 
