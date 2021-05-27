@@ -1,4 +1,4 @@
-#menu, #iconos, #pe, #quenSomos, #servicios {
+#menu, #iconos, #pe, #quenSomos, #servicios, #blog {
 	padding: 15px 0;
 }
 
@@ -35,7 +35,21 @@
 #pe a {
 	color:#ccc;
 	text-decoration: none;
+}
 
+.limparfloat {
+	clear: both;
+}
+
+#blog a {
+	text-decoration: none;
+
+}
+
+#blog #principal img {
+	float: left;
+	padding-right: 25px;
+	padding-bottom: 25px;
 }
 
 #peFila2 {
@@ -48,9 +62,10 @@
 	padding-right: 10px;
 }
 
-#quenSomos p, #servicios p {
+#quenSomos p, #servicios p, #blog p {
 	text-align: justify;
 }
+
 
 .separador {
 	background-color: #1a0000;

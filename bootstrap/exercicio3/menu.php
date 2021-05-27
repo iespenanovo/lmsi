@@ -18,7 +18,7 @@
 				<div class="btn-group d-flex" role="group" aria-label="Barra 2">
 					<a href="blog.php" class="btn btn-light w-100">Blog</a>
 					<a class="btn btn-light w-100" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</a>
-					<a class="btn btn-light w-100" data-bs-toggle="modal" data-bs-target="#axuda">Axuda</a>
+					<a class="btn btn-light w-100" data-bs-toggle="modal" data-bs-target="#modalaxuda">Axuda</a>
 				</div>					
 
 			</div>

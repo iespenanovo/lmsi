@@ -52,4 +52,7 @@
 
 	</div>
 </div>
-
+<?php 
+	include("modal-axuda.php");
+	include("modal-contacto.php");
+?>
