@@ -1,0 +1,73 @@
+/* 
+Página para estilos propios (style.css)
+*/
+
+#pie {
+	background-color: #000;
+	padding: 20px 0 20px 0;
+	color:#ccc;
+}
+#pie tr{
+	color:#ccc;
+}
+#pie a{
+	color:#ccc;
+}
+#pie img {
+	margin-top: 40px;
+}
+
+#pie tr:hover {
+	background-color: #ccc;
+	color:#000;
+}
+
+#menu {
+	padding: 11px 0 21px 0;
+}
+#menu .btn {
+	font-size: 1.3em;
+	margin-top: 13px;
+}
+
+/* Añade aquí tu CSS: */
+
+#tablas,#alumnos {
+	padding: 40px 0;
+}
+#tablas th {
+	color: #fff;
+}
+
+#tablas caption {
+	color: #fff;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+#tablas [colspan], #tablas [rowspan] {
+	background-color: tomato;
+	border: 1px solid blue;
+}
+
+#alumnos {
+	color: #fff;
+}
+#alumnos h1 {
+	font-weight: 800;
+	color: yellow;
+}
+
+#alumnos img {
+	border: 3px dashed #fff;
+	padding:12px;
+}
+
+#alumnos img:hover {
+	border: 4px dashed yellow;
+	background-color: red;
+}
+
+#alumnos .marco:hover {
+	color: yellow;
+}
