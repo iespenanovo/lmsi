@@ -4,12 +4,24 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Atributos básicos en HTML</title>
+	<style>
+		.azul {	color:blue;	}
+		#cab1 {
+			text-decoration: underline;
+			text-align: center;
+		}
+		#p2 { 
+			text-indent:1.5rem;
+			font-size: 1.2rem;
+		}
+	</style>
 </head>
 <body>
-	<h1 id="cab1" class="azul">Atributos básicos en HTML</h1>
+	<h1 id="cab1" class="azul" title="Títular de nivel 1" onmouseover="javascript:alert('has pasado el ratón por encima del titular')">Atributos básicos en HTML</h1>
 	<p id="p1" class="azul">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, ex saepe iste, illo dolore incidunt tempore asperiores in beatae quibusdam qui delectus, provident neque hic. Dolore blanditiis, harum assumenda asperiores.</p>
 	<p id="p2" class="azul">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis consequatur excepturi officia, odio quasi distinctio cum facere. Pariatur quas ipsam nostrum cupiditate ullam provident voluptas voluptatum facere quidem? Sint, eos.</p>
-	<p id="p3" style="color: red;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nostrum totam corporis assumenda veritatis sequi commodi voluptates, magnam blanditiis, quisquam placeat! Ut laborum consequuntur vero quae molestiae numquam voluptate nostrum.</p>
+	<p id="p3" style="color: red;" onclick="javascript:alert('has hecho click en el párrafo rojo')">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nostrum totam corporis assumenda veritatis sequi commodi voluptates, magnam blanditiis, quisquam placeat! Ut laborum consequuntur vero quae molestiae numquam voluptate nostrum.</p>
 
+	
 </body>
 </html>
