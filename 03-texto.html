@@ -15,6 +15,21 @@
 			border-left: 3px solid grey;
 			padding-left: 1rem;
 		}
+
+		.tfno {
+			color: brown;
+			border: 1px dotted grey;
+			padding: 3px;
+		}
+
+		.email {
+			color: green;
+			text-decoration: underline;
+		}
+
+		span {
+			font-weight: bold; /* negrita */
+		}
 	</style>
 </head>
 <body>
@@ -41,8 +56,19 @@
 
 	<p>El siguiente texto es una cita:</p>
 
-	<blockquote>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, unde. Veniam, incidunt aliquid distinctio ipsum consequatur, eaque ad iste alias quos soluta iure, totam dolorem modi nobis blanditiis consequuntur eum."</blockquote>
+	<blockquote cite="https://es.lipsum.com/">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, unde. Veniam, incidunt aliquid distinctio ipsum consequatur, eaque ad iste alias quos soluta iure, totam dolorem modi nobis blanditiis consequuntur eum."</blockquote>
 
 	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolor, tempore, minima quia voluptates ducimus eum labore praesentium animi possimus unde rerum reiciendis officia optio impedit doloribus itaque dolore laboriosam?</p>
+
+	<h1>Etiquetas para acrónimos y abreviaturas: &lt;acronym&gt; , &lt;abbr&gt;  (de tipo en línea)</h1>
+
+	<p>El lenguaje <acronym title="HyperText Markup Language">HTML</acronym> es estandarizado por el <acronym title="World Wide Web Consortium">W3C</acronym>.</p>
+
+	<p>Tenemos muchos dispositivos con conexión usb, como ratón, teclado, impresora, <abbr title="etcétera">etc</abbr></p>
+
+	<h1>Etiqueta genérica para texto: &lt;span&gt; (de tipo en línea)</h1>
+
+	<p>Los datos son: teléfonos <span class="tfno">985887744</span>(casa), <span class="tfno">658889944</span> (smartphone) correo electrónico <span class="email">correo@miempresa.com</span> ... </p>
+
 </body>
 </html>
