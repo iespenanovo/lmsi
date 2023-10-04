@@ -1,0 +1,12 @@
+/* esto es un comentario */
+/* en un archivo con extensión css solo se 
+pueden escribir reglas css, nunca HTML */
+
+body {
+	background-color: lightgrey;
+}
+
+h1 {
+	text-align: center;
+	color: blue;
+}
