@@ -4,6 +4,19 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Listas en HTML</title>
+	<style>
+		#provincias {
+			list-style-type: upper-roman;
+		}
+		#elementos {
+			list-style-type: upper-latin;
+		}
+		#imagenes{
+			list-style-image: url("img/flecha.jpg");
+			font-size: 2rem;
+		}
+
+	</style>
 </head>
 <body>
 	<h1>Listas en HTML</h1>
@@ -31,5 +44,65 @@
 		<li>sábado</li>
 		<li>domingo</li>
 	</ol>	
+
+	<h3>Las listas se pueden anidar:</h3>
+
+	<ol>
+		<li>Trimestre</li>
+		<ul>
+			<li>Enero</li>
+			<ul>
+				<li>Primera quincena</li>
+				<li>Segunda quincena</li>
+			</ul>
+			<li>Febrero</li>
+			<ol>
+				<li>Quincena</li>
+				<li>Quincena</li>
+			</ol>
+			<li>Marzo</li>
+		</ul>
+		<li>Trimestre</li>
+		<ul>
+			<li>Abril</li>
+			<li>Mayo</li>
+			<li>Junio</li>
+		</ul>
+		<li>Trimestre</li>
+		<ul>
+			<li>Julio</li>
+			<li>Agosto</li>
+			<li>Septiembre</li>
+		</ul>
+		<li>Trimestre</li>
+		<ul>
+			<li>Octubre</li>
+			<li>Noviembre</li>
+			<li>Diciembre</li>
+		</ul>
+	</ol>
+	
+	<h3>Alicando css personalizado a las listas</h3>	
+
+	<ol id="provincias">
+		<li>A Coruña</li>
+		<li>Lugo</li>
+		<li>Ourense</li>
+		<li>Pontevedra</li>
+	</ol>
+
+	<ul id="elementos">
+		<li>Elemento</li>
+		<li>Elemento</li>
+		<li>Elemento</li>
+		<li>Elemento</li>
+		<li>Elemento</li>
+	</ul>
+
+	<ul id="imagenes">
+		<li>viñetas con imagen</li>
+		<li>viñetas con imagen</li>
+		<li>viñetas con imagen</li>
+	</ul>
 </body>
 </html>
