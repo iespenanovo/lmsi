@@ -13,7 +13,17 @@
 		}
 
 		.fondoImagen {
-			background-image: url("img/flecha.jpg");
+			background-image: url("img/fondoGris.jpg");
+		}
+
+		#pImagen {
+			background-color: lightblue;
+			width: 50%;
+		}
+		#pImagen img { /* selector css descendente */
+			/* aplica a las imágenes descendentes de #pImagen */
+			width: 100%;
+			border: 1px dotted red;
 		}
 	</style>
 </head>
@@ -36,8 +46,20 @@
 	</p>
 	<p class="fondoImagen">
 		Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Aperiam veritatis, odit facilis nihil! Eligendi asperiores praesentium aliquid, nostrum veniam molestias commodi inventore obcaecati quibusdam dolorem ducimus, ex accusantium odit velit.
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut et corporis aspernatur, totam qui veniam, fuga optio sunt, veritatis debitis ipsum exercitationem dolorem accusamus in. Quod porro odio facilis. Dignissimos.
+		Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Culpa et est placeat itaque pariatur laudantium? Harum, facilis tempore aperiam, cumque vel ut eligendi! Eaque suscipit facere sit neque consequatur blanditiis!
+	</p>
+	<h3>Enlace en una imagen:</h3>
+
+	<p>
+		<a href="https://uniwebsidad.com/libros/xhtml/capitulo-6" target="_blank"><img src="img/html.png" alt="Enlace a página de HTML" width="50" title="Enlace a HTML sobre imágenes"></a>
 	</p>
 
+	<h3>Aplicar CSS a una imagen</h3>
+
+	<p id="pImagen">
+		<img src="img/html_transparente.png" alt="imagen con propiedades css">
+	</p>
 
 </body>
 </html>
