@@ -26,6 +26,10 @@
 			padding: 0.25rem;
 			text-align: center;
 		}
+
+		td[colspan], td[rowspan] {
+			background-color: lightblue;
+		}
 	</style>
 </head>
 <body>
@@ -83,15 +87,15 @@
 			<td rowspan="3">Celda 2.5 - 3.5</td>
 		</tr>
 		<tr>
-			<td>Celda 3.1</td>
-			<td>Celda 3.2</td>
+			<td colspan="2" rowspan="2">Celda 3.1 - 4.2</td>
+			<!-- <td>Celda 3.2</td> -->
 			<td>Celda 3.3</td>
 			<td>Celda 3.4</td>
 			<!-- <td>Celda 3.5</td> -->
 		</tr>
 		<tr>
-			<td>Celda 4.1</td>
-			<td>Celda 4.2</td>
+			<!-- <td>Celda 4.1</td> -->
+			<!-- <td>Celda 4.2</td> -->
 			<td>Celda 4.3</td>
 			<td>Celda 4.4</td>
 			<!-- <td>Celda 4.5</td> -->
