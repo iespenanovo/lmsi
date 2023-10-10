@@ -4,26 +4,98 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tablas en HTML</title>
+	<style>
+		table {	
+			padding: 1rem;
+			margin-bottom: 2rem; 
+		}
+		#t1 { 
+			border: 1px solid blue; 
+			border-spacing: 0.75rem;
+		}
+		#t2 { 
+			border: 1px solid red;
+			border-collapse: collapse;
+		}
+		caption { font-size: 1.5rem}
+		#t1 caption { color: blue;}
+		#t2 caption { color: red; }
+
+		td, th {
+			border: 1px solid grey;
+			padding: 0.25rem;
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
 	<h1>Tablas en HTML</h1>
 
-	<table>
-		<caption>Título de tabla</caption>
+	<table id="t1">
+		<caption>Título de tabla 1</caption>
 		<tr>
-			<td>contenido</td>
-			<td>contenido</td>
-			<td>contenido</td>
-			<td>contenido</td>
-			<td>contenido</td>
+			<th>Nombre</th>
+			<th>Edad</th>
+			<th>DNI</th>
+			<th>Curso</th>
+			<th>Población</th>
 		</tr>
 		<tr>
-			<td>cont</td>
-			<td>cont</td>
-			<td>cont</td>
-			<td>cont</td>
-			<td>cont</td>
+			<td>Ana</td>
+			<td>33</td>
+			<td>11223344Y</td>
+			<td>ASIR 1</td>
+			<td>Vilalba</td>
 		</tr>		
+		<tr>
+			<td>José Luís</td>
+			<td>23</td>
+			<td>22334411W</td>
+			<td>ELVE 2</td>
+			<td>A Coruña</td>
+		</tr>		
+	</table>
+
+
+	<table id="t2">
+		<caption>Título de tabla 2</caption>
+		<tr>
+			<!-- th{Cab $}*5 -->
+			<th>Cab 1</th>
+			<th>Cab 2</th>
+			<th>Cab 3</th>
+			<th>Cab 4</th>
+			<th>Cab 5</th>
+		</tr>
+		<!-- tr>(td{Celda 1.$}*5) -->
+		<tr>
+			<td>Celda 1.1</td>
+			<td colspan="2">Celda 1.2-1.3</td>
+			<!-- <td>Celda 1.3</td> -->
+			<td>Celda 1.4</td>
+			<td>Celda 1.5</td>
+		</tr>
+		<tr>
+			<td>Celda 2.1</td>
+			<td>Celda 2.2</td>
+			<td>Celda 2.3</td>
+			<td>Celda 2.4</td>
+			<td rowspan="3">Celda 2.5 - 3.5</td>
+		</tr>
+		<tr>
+			<td>Celda 3.1</td>
+			<td>Celda 3.2</td>
+			<td>Celda 3.3</td>
+			<td>Celda 3.4</td>
+			<!-- <td>Celda 3.5</td> -->
+		</tr>
+		<tr>
+			<td>Celda 4.1</td>
+			<td>Celda 4.2</td>
+			<td>Celda 4.3</td>
+			<td>Celda 4.4</td>
+			<!-- <td>Celda 4.5</td> -->
+		</tr>
 	</table>
 </body>
 </html>
