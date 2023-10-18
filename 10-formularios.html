@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formularios HTML</title>
+	<link rel="stylesheet" href="css/10-estilo.css">
+</head>
+<body>
+	<div class="contenedor">
+		<h1>Campos de formulario</h1>
+		<hr>
+
+		<form action="10-formularios-datos.php" method="GET">
+			<!-- también se puede enviar por method="POST" -->
+
+			<div class="campo">
+				<label class="principal" for="nombre">Nombre:</label>
+				<input id="nombre" type="text" name="nombre" maxlength="20" value="" required >
+			</div>
+			<div class="campo">			
+				<label class="principal" for="clave">Contraseña:</label>
+				<input id="clave" type="password" name="clave" minlength="8" required>
+			</div>
+			<div class="campo">
+				<input type="submit" value="Enviar formulario">
+			</div>
+
+
+		</form>
+	</div>
+</body>
+</html>

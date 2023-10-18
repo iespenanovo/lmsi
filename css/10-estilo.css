@@ -1,0 +1,23 @@
+.contenedor {
+	width: 80%;
+	max-width: 500px;
+	border: 1px dotted grey;
+	margin: auto;
+	padding: 1.5rem;
+}
+
+h1 {
+	text-align: center;
+}
+.campo {
+	margin: 10px 0; /* 10px arriba/abajo y 0 izda/dcha */
+}
+/*
+label {
+	display: inline-block;
+	width: 25%;
+}
+*/
+label.principal {
+	display: block; /* se comportan como etiquetas tipo bloque */
+}
