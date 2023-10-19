@@ -12,10 +12,12 @@
 
 	$nombre=$_GET['nombre']??"";
 	$clave=$_GET['clave']??"";
+	$correo=$_GET['correo']??"";
 
 
 	echo "<p>Nombre: $nombre</p>";
 	echo "<p>Contraseña: $clave</p>";
+	echo "<p>Correo electrónico: $correo</p>";
 
 
 	?>

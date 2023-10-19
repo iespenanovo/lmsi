@@ -21,3 +21,14 @@ label {
 label.principal {
 	display: block; /* se comportan como etiquetas tipo bloque */
 }
+
+
+/*si queremos que los input 
+de tipo radio se separen un poco más, 
+podemos añadir un magen por la izda:*/
+/*
+input[type="radio"] {
+	display: inline-block;
+	margin-left: 20px;
+}
+*/
