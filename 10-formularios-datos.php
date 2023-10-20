@@ -13,11 +13,23 @@
 	$nombre=$_GET['nombre']??"";
 	$clave=$_GET['clave']??"";
 	$correo=$_GET['correo']??"";
+	$edad=$_GET['edad']??"";
+	$fecha=$_GET['fecha']??"";
+	$sexo=$_GET['sexo']??"";
+	$F=$_GET['F']??"";
+	$B=$_GET['B']??"";
+	$N=$_GET['N']??"";
 
 
 	echo "<p>Nombre: $nombre</p>";
 	echo "<p>Contraseña: $clave</p>";
 	echo "<p>Correo electrónico: $correo</p>";
+	echo "<p>Edad: $edad</p>";
+	echo "<p>Fecha: $fecha</p>";
+	echo "<p>Sexo: $sexo</p>";
+	echo "<p>Fútbol: $F</p>";
+	echo "<p>Baloncesto: $B</p>";
+	echo "<p>Natación: $N</p>";
 
 
 	?>
