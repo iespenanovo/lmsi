@@ -19,7 +19,8 @@
 	$F=$_GET['F']??"";
 	$B=$_GET['B']??"";
 	$N=$_GET['N']??"";
-
+	$prov=$_GET['prov']??"";
+	$so=$_GET['so']??array();
 
 	echo "<p>Nombre: $nombre</p>";
 	echo "<p>Contraseña: $clave</p>";
@@ -30,6 +31,14 @@
 	echo "<p>Fútbol: $F</p>";
 	echo "<p>Baloncesto: $B</p>";
 	echo "<p>Natación: $N</p>";
+	echo "<p>Provincia: $prov</p>";
+	echo "<p>Sistemas operativos:";
+	//var_dump($so);
+	foreach ($so as $valor) {
+		echo "$valor ";
+	}
+	echo "</p>";
+
 	?>
 
 	<p><a href="10-formularios.html">VOLVER</a></p>

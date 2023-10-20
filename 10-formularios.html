@@ -55,17 +55,41 @@
 				<label for="B"> Baloncesto </label>
 				<input id="B" type="checkbox" name="B" value="B" >
 				<label for="N"> Natación </label>
-				<input id="N" type="checkbox" name="N" value="N" >
+				<input id="N" type="checkbox" name="N" value="N">
 			</div>
 
 			<div class="campo">
 				<label for="prov" class="principal">Provincia:</label>
-				<select name="prov" id="prov">
-					<option value=""></option>
+				<select name="prov" id="prov" required>
+					<option value="" label="Seleccione"></option>
+					<optgroup label="Galicia">
 					<option value="CO">A Coruña</option>
 					<option value="LU">Lugo</option>
+					<option value="OU">Ourense</option>
+					<option value="PO">Pontevedra</option>
+					</optgroup>
+					<optgroup label="Cataluña">
+						<option value="BA">Barcelona</option>
+						<option value="TA">Tarragona</option>
+						<option value="GE">Gerona</option>
+						<option value="LE">Lérida</option>
+
+					</optgroup>
 				</select>
 			</div>
+
+			<div class="campo">
+				<label for="so" class="principal">Sistemas Operativos:</label>
+				<select name="so[]" id="so" multiple size="5">
+					<option value="W8">Windows 8</option>
+					<option value="W10">Windows 10</option>
+					<option value="W11">Windows 11</option>
+					<option value="LX">Linux</option>
+					<option value="MCOS">macOS</option>
+				</select>
+
+			</div>
+
 
 			<div class="campo">
 				<input type="submit" value="Enviar formulario">
