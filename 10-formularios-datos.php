@@ -21,6 +21,7 @@
 	$N=$_GET['N']??"";
 	$prov=$_GET['prov']??"";
 	$so=$_GET['so']??array();
+	$referencia=$_GET['referencia']??"";
 
 	echo "<p>Nombre: $nombre</p>";
 	echo "<p>Contraseña: $clave</p>";
@@ -38,6 +39,7 @@
 		echo "$valor ";
 	}
 	echo "</p>";
+	echo "<p>Referencia: $referencia</p>";
 
 	?>
 

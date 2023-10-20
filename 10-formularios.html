@@ -45,13 +45,14 @@
 				<label for="H">Hombre</label>
 				<input id="M" type="radio" name="sexo" value="M" >
 				<label for="M">Mujer</label>
+				<!-- para marcar por defecto una opción de 'radio' o de 'checkbox', ponemos el parámetro 'checked' -->
 
 			</div>
 
 			<div class="campo">
 				<label class="principal">Deportes:</label>
 				<label for="F">Fútbol </label>
-				<input id="F" type="checkbox" name="F" value="F" >
+				<input id="F" type="checkbox" name="F" value="F">
 				<label for="B"> Baloncesto </label>
 				<input id="B" type="checkbox" name="B" value="B" >
 				<label for="N"> Natación </label>
@@ -61,6 +62,7 @@
 			<div class="campo">
 				<label for="prov" class="principal">Provincia:</label>
 				<select name="prov" id="prov" required>
+					<!-- para marcar una opción por defecto , añadimos el parámetro 'selected' a dicha opción -->
 					<option value="" label="Seleccione"></option>
 					<optgroup label="Galicia">
 					<option value="CO">A Coruña</option>
@@ -73,7 +75,6 @@
 						<option value="TA">Tarragona</option>
 						<option value="GE">Gerona</option>
 						<option value="LE">Lérida</option>
-
 					</optgroup>
 				</select>
 			</div>
@@ -87,8 +88,11 @@
 					<option value="LX">Linux</option>
 					<option value="MCOS">macOS</option>
 				</select>
-
 			</div>
+
+			<input type="hidden" name="referencia" value="F01">
+
+
 
 
 			<div class="campo">
