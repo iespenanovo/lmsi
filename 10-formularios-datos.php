@@ -30,9 +30,9 @@
 	echo "<p>Fútbol: $F</p>";
 	echo "<p>Baloncesto: $B</p>";
 	echo "<p>Natación: $N</p>";
-
-
 	?>
+
+	<p><a href="10-formularios.html">VOLVER</a></p>
 
 </body>
 </html>
