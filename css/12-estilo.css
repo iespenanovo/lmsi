@@ -1,0 +1,84 @@
+/*selector de etiqueta*/
+h2 {
+	text-align: center;
+	font-family: helvetica, sans-serif;
+}
+
+span {
+	color: red;
+}
+
+
+
+/*selector descendente*/
+
+
+#contenedor1 span {
+	text-decoration: underline
+}
+
+#contenedor2 span {
+	border-left: 2px solid tomato;
+	border-right: 2px solid tomato;
+	padding: 0 5px;
+}
+
+#contenedor1 p span a {
+	color: green;
+}
+
+#contenedor3 ul {
+	color: blue;
+}
+
+#contenedor3 ul ul {
+	color: tomato;
+}
+#contenedor3 ul ul ul {
+	color: brown;
+}
+/* selector múltiple */
+#contenedor3 table, #contenedor3 td, #contenedor3 th  {
+	border:1px solid black;
+}
+
+/* selector descendente y selector de hijos */
+#contenedor1 p > a {
+	border-top: 1px dotted black;
+}
+
+
+/* selector adyacente */
+
+p + p {
+	text-indent: 2rem;
+
+}
+
+/* selector de clase */
+
+.principal::first-letter { 
+/* hemos aplicado un pseudo elemento que solo 
+afecta a la primera letra del 
+elemento seleccionado */
+	font-size: 2rem;
+	color: blue;
+	font-weight: bold;
+}
+
+/* selector de atributo */
+
+td[colspan]{
+	background-color: lightgrey;
+}
+td[colspan="3"]{
+	background-color: grey;
+}
+
+[rowspan] {
+	background-color: yellow;
+}
+
+
+
+

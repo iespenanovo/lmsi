@@ -25,6 +25,10 @@
 			<ul>
 				<li>Elemento 2.1</li>
 				<li>Elemento 2.2</li>
+				<ul>
+					<li>Elemento 2.2.A</li>
+					<li>Elemento 2.2.B</li>
+				</ul>
 				<li>Elemento 2.3</li>
 			</ul>
 			<li>Elemento 3</li>
@@ -36,7 +40,38 @@
 			</ul>
 			<li>Elemento 5</li>
 		</ul>
+
+		<table>
+			<caption>Título tabla</caption>
+			<tr>
+				<th>cab</th>
+				<th>cab</th>
+				<th>cab</th>
+				<th>cab</th>
+			</tr>
+			<tr>
+				<td rowspan="2">celda</td>
+				<td>celda</td>
+				<td>celda</td>
+				<td>celda</td>
+			</tr>
+			<tr>
+				<!-- <td>celda</td> -->
+				<td>celda</td>
+				<td colspan="2">celda</td>
+				<!-- <td>celda</td> -->
+			</tr>
+			<tr>
+				<td colspan="3">celda</td>
+				<td>celda</td>
+			</tr>
+
+		</table>
+
+
 	</div>
-	
+
+
+
 </body>
 </html>
