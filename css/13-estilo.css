@@ -4,16 +4,19 @@
 	padding: 1rem;
 }
 body {
-	font-size: 1.2em;
+	font-size: 20px; /*16px es el tamaño por defecto */
+	background-color: lightgrey;
 }
 
 #contenedor1 {
 	width: 500px;
+	background-color: lightblue;
 }
 
 #contenedor2 {
 	width: 80%;
 	font-size: 1.5em;
+	background-color: lightcyan;
 }
 
 #contenedor1 p {
