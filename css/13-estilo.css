@@ -26,3 +26,57 @@ body {
 #contenedor2 p {
 	font-size: 1.2rem;
 }
+
+.colores {
+	width: 90%;
+	margin: 1rem auto;
+	border: 1px solid blue;
+	background-color: #fff; /* color blanco en rgb hex */
+}
+
+.colores div {
+	padding: 1.5rem;
+	font-size: 2rem;
+	text-align: center;
+	border: 1px dotted #000; /* color negro en rgb hex */
+}
+
+.colores div:nth-child(1) {
+	background-color: red; /* equivale a #f00 y a rgb(255,0,0) */
+}
+.colores div:nth-child(2) {
+	background-color: #ff0000; /*rgb hexadecimal*/ 
+}
+.colores div:nth-child(3) {
+	background-color: rgb(255,0,0); /* rgb decimal */
+}
+.colores div:nth-child(4) {
+	background-color: rgb(100%,0%,0%); /*rgb porcentual*/
+}
+
+.colores div:nth-child(5) {
+	background-color: #A313FF; 
+}
+.colores div:nth-child(6) {
+	background-color: rgb(25%,40%,50%); 
+}
+.colores div:nth-child(7) {
+	background-color: lightgoldenrodyellow;
+}
+.colores div:nth-child(8) {
+	background-color: #0f0; /*verde: sería 00ff00, pero si se 
+	repiten los dígitos en todos los colores, 
+	podemos usar un solo dígito por color*/
+}
+
+.colores div:nth-child(9) {
+	background-color: #00f; /*azul*/
+}
+.colores div:nth-child(10) {
+	background-color: #fff; /* blanco: #ffffff */ 
+}
+
+
+
+
+
