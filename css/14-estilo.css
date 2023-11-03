@@ -1,0 +1,66 @@
+
+#contenedor {
+	width: 80%;
+	padding: 50px;
+	border: 2px solid grey;
+	margin: 10px auto;
+}
+
+#contenedor p.c1 {
+	height: 200px;
+	border: 1px dotted grey;
+
+	border-radius: 30px;
+
+	margin: 20px 30px 40px 50px;
+	padding: 10px 20px;
+
+	background-color: lightgreen;
+	box-shadow: 2px 5px 3px;
+
+}
+
+#contenedor h1 {
+/*	padding-left: 1rem;*/
+padding: 0 0 0 1rem;
+
+border-top: 2px solid blue;
+border-bottom: 2px solid blue;
+}
+
+#contenedor p.c2 , #contenedor p.c3 ,#contenedor p.c4 {
+
+	width: 80%;
+	height: 300px;
+	border: 1px solid #000;
+	margin: 20px auto; /*20px arriba y abajo y 
+	automático izda y dcha (centrar)*/
+	padding: 10px 20px;
+}
+#contenedor p.c2 {
+	background-color: lightblue;
+	background-image: url("../img/html_transparente.png");
+	background-size: 33.33%;
+
+}
+#contenedor p.c3 {
+	background-color: lightpink;
+	background-image: url("../img/html_transparente.png");
+	background-size: 20%;
+/*	background-position: right bottom ;*/
+	background-position: center center ;
+	background-position: 100% 100% ;
+/*	background-repeat: no-repeat;*/
+	background-repeat: repeat-x;
+
+
+}
+
+#contenedor p.c4 {
+	padding-top: 100px ;
+	background: url("../img/flecha.jpg") repeat-x 0% 95%,
+				url("../img/html_transparente.png") repeat-x 0% 0%;
+	background-size: 10%,20%;
+
+	background-color: #ccc;
+}
