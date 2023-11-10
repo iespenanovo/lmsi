@@ -64,3 +64,31 @@ border-bottom: 2px solid blue;
 
 	background-color: #ccc;
 }
+
+#contenedor2, #contenedor3 {
+	width: 100%; /* valor por defecto para un  */
+	display: flex; /* lo pasamos a contenedor flex */
+	flex-wrap: wrap; /* permite salto de línea 
+			si los elementos no entran en una sola línea */	
+}
+
+#contenedor2, #contenedor2 p {
+	box-sizing: content-box; /* valor por defecto */
+}
+
+#contenedor3, #contenedor3 p {
+	box-sizing: border-box;
+}
+#contenedor2 p, #contenedor3 p {
+	width: 25%;
+	border:1px solid blue;
+	padding: 2%;
+
+}
+
+
+/*para trabajar por defecto con el modelo de caja
+con ancho en base a borde, usamos esta regla:
+	* {box-sizing: border-box;}
+
+*/
