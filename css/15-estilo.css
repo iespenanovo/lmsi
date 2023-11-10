@@ -5,9 +5,57 @@ con ancho (width) de borde a borde: */
 	width: 80%;
 	border: 1px solid black;
 	margin: 2rem auto;
-	padding: 1rem;
+	padding: 5rem 1rem 1rem 1rem;
+	position: relative;
 }
 
 h1 {
 	text-align: center;
+}
+
+#uno {
+	border: 1px solid grey;
+	position: static; /* este es el posicionamiento por
+	 defecto, no es necesario indicarlo */
+}
+
+#dos {
+	border: 1px solid blue;
+	position: relative;
+	top: 50px; /* equivale a bottom: -50px */
+	left: 25px; /* equivale a right: -25px */
+
+/*	bottom: -50px;*/
+}
+
+#tres {
+	border: 1px solid red;
+	padding: 3rem 2rem;
+	background-color: lightgrey;
+	position: relative;
+}
+
+#tres img {
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+}
+
+#uno img {
+	position: absolute;
+	top:5px;
+	right: 5px;
+}
+
+#logo {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+#logofijo {
+	position: fixed;
+	top: 1rem;
+	left: 1rem;
+
 }
