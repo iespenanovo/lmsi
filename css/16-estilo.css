@@ -1,0 +1,45 @@
+* {box-sizing: border-box;}
+
+.contenedor {
+	text-align: center;
+	width: 80%;
+	min-width: 450px;
+	max-width: 1000px;
+	border: 1px solid grey;
+	margin: auto;
+	overflow: hidden;
+}
+
+.apartado1, .apartado2 {
+	border: 1px solid red;
+	overflow: hidden;
+}
+.apartado1 p, .apartado2 p {
+
+	font-size: 2rem;
+	width: 20%;
+	border: 1px solid green;
+	
+	padding: 1rem;
+}
+
+.apartado1 p {
+	float: left;
+}
+
+.apartado2 p {
+	float: right;
+}
+
+.limpiar {
+	clear: both;
+}
+
+.apartado3 a:nth-child(1) {
+	float: left;
+	padding-left: 1rem;
+}
+.apartado3 a:nth-child(2) {
+	float: right;
+	padding-right: 1rem;
+}
