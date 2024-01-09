@@ -1,0 +1,11 @@
+* {box-sizing: border-box;}
+
+.contenedor-flex-1 {
+	display: flex;
+}
+
+.item-1 {
+	font-size: 2rem;
+	padding: 1rem;
+	border: 1px solid blue;
+}

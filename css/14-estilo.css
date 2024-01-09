@@ -58,11 +58,12 @@ border-bottom: 2px solid blue;
 
 #contenedor p.c4 {
 	padding-top: 100px ;
+	background-color: #ccc;
+
 	background: url("../img/flecha.jpg") repeat-x 0% 95%,
 				url("../img/html_transparente.png") repeat-x 0% 0%;
 	background-size: 10%,20%;
 
-	background-color: #ccc;
 }
 
 #contenedor2, #contenedor3 {
