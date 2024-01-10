@@ -2,6 +2,22 @@
 
 .contenedor-flex-1 {
 	display: flex;
+	flex-direction: row; /*valor por defecto, no es necesario indicarlo*/
+	/* 'row' valor por defecto, eje principal horizontal de izda a dcha*/
+	/* 'row-reverse' eje principal horizontal de dcha a izda*/
+	/* 'column' eje principal vertical desde parte superior a inferior*/
+	/* 'column-reverse'  eje principal vertical desde parte inferior a superior*/
+
+	flex-wrap: wrap; 
+	/* nowrap -> es valor por defecto, no se permite cambio de fila en los items*/
+	/* wrap -> permite cambio de fila en los items cuando no hay espacio*/
+	/* wrap-reverse -> permite cambio de fila en los items cuando no hay espacio,
+					   saltan hacia la parte superior*/
+
+	flex-flow: row wrap; /*permite indicar las dos propiedades anteriores juntas*/
+	/* o bien usamos las propiedades independientes o bien la combinada	*/
+	
+
 }
 
 .item-1 {
