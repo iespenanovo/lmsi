@@ -1,7 +1,15 @@
 * {box-sizing: border-box;}
+.contenedor {
+	border: 1px solid red;
+}
+h1	{text-align: center;}
+
+.contenedor-flex-1,.contenedor-flex-2 {
+	display: flex;
+	border: 1px dotted grey;
+}
 
 .contenedor-flex-1 {
-	display: flex;
 	flex-direction: row; /*valor por defecto, no es necesario indicarlo*/
 	/* 'row' valor por defecto, eje principal horizontal de izda a dcha*/
 	/* 'row-reverse' eje principal horizontal de dcha a izda*/
@@ -17,11 +25,37 @@
 	flex-flow: row wrap; /*permite indicar las dos propiedades anteriores juntas*/
 	/* o bien usamos las propiedades independientes o bien la combinada	*/
 	
+	justify-content: flex-start; 
+	/*	flex-start; valor por defecto */
+	/*flex-start: flex-end: space-between: center: space-around: space-evenly*/
+
+
 
 }
 
-.item-1 {
+.contenedor-flex-2 {
+	align-items: flex-end; /* propiedad alineación eje transversal */
+/*	flex-start(por defecto) : flex-end: center: baseline: stretch:*/
+	
+	height: 300px;
+
+
+}
+
+.item-1, .item-2 {
 	font-size: 2rem;
 	padding: 1rem;
 	border: 1px solid blue;
+	margin: 5px 0;
+}
+
+.item-2-3 {
+	padding: 3rem;
+	font-size: 3rem;
+	align-self: stretch; /* alineación en eje transversal pero solo para un item */
+}
+
+.item-2-5 {
+	padding: 1rem;
+	font-size: 1.5rem;
 }
