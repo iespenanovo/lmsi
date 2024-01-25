@@ -1,0 +1,52 @@
+* {box-sizing: border-box;}
+
+.dos{
+	background-color: #b6ebb3;
+}
+.uno {
+	background-color: #bacee3;
+}
+.tres {
+	background-color: #7ebdbb;
+}
+
+#cabecera {
+/*	border: 1px solid darkred;*/
+	background-color: #202020;
+	display: flex;
+
+	height: 170px;
+	align-items: center;
+	/* en lugar de las dos propiedades anteriores, también podríamos usar:	*/
+	/*	padding: 50px;*/
+
+
+	justify-content: flex-end; 
+	/* también vale declarar flex-direction en row-reverse */
+	/* y dejar la justificación de items a flex-start (defecto)	*/
+
+}
+
+#logo {
+	margin-right: 12%;
+}
+
+h1 { text-align:center; }
+
+#viajes {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.viajes-item {
+	flex-basis: 33.33%;
+	padding: 20px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.viajes-item img {
+	width: 100%;
+	order: -1;
+}

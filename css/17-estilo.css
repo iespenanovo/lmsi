@@ -30,6 +30,14 @@ h1	{text-align: center;}
 	/*flex-start: flex-end: space-between: center: space-around: space-evenly*/
 
 
+	/* para crear huecos entre los items tenemos */
+	column-gap: 5px; /* separación entre items horizontal */
+
+	/*	row-gap: 8px ; separación entre items vertical*/
+	/*	gap: 5px 8px;  separación horizontal y vertical juntas*/
+	/*	explicado en https://lenguajecss.com/css/maquetacion-y-colocacion/flex/ */
+
+
 
 }
 
