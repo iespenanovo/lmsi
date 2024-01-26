@@ -50,3 +50,9 @@ h1 { text-align:center; }
 	width: 100%;
 	order: -1;
 }
+
+.viajes-item button {
+	width: 120px;
+	align-self: center;
+	margin-top: auto;
+}
