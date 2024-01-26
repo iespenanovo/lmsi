@@ -1,3 +1,5 @@
+/*diseño responsive con flexbox y filosofía desktop first*/
+
 * {box-sizing: border-box;}
 
 .dos{
@@ -56,3 +58,27 @@ h1 { text-align:center; }
 	align-self: center;
 	margin-top: auto;
 }
+
+/*para dispositivo tamaño tablet:*/
+@media (max-width: 991.98px) { /*css aplicado en pantallas por debajo 992 px */
+
+	#viajes {
+		flex-wrap: wrap;
+	}
+	.viajes-item {
+		flex-basis: 50%;
+	}
+}	
+
+
+/*para dispositivo tamaño teléfono:*/
+@media (max-width: 767.98px) { /*css aplicado en pantallas por debajo 768 px */
+
+	#viajes {
+		flex-direction: column-reverse;
+	}
+	.viajes-item {
+		flex-basis: 100%;
+	}
+}	
+
