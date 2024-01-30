@@ -1,4 +1,5 @@
-/*diseño responsive con flexbox y filosofía desktop first*/
+/*diseño responsive con flexbox y filosofía mobile first*/
+/* prioridad a dispositivos pequeños */
 
 * {box-sizing: border-box;}
 
@@ -37,11 +38,11 @@ h1 { text-align:center; }
 
 #viajes {
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: column-reverse;
 }
 
 .viajes-item {
-	flex-basis: 33.33%;
+	flex-basis: 100%;
 	padding: 20px;
 
 	display: flex;
@@ -59,26 +60,24 @@ h1 { text-align:center; }
 	margin-top: auto;
 }
 
-/*para dispositivo tamaño tablet:*/
-@media (max-width: 991.98px) { /*css aplicado en pantallas por debajo 992 px */
-
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
 	#viajes {
+		flex-direction: row-reverse;
 		flex-wrap: wrap;
-	}
+	}	
 	.viajes-item {
-		flex-basis: 50%;
-	}
-}	
+		flex-basis: 50%;	
+	}	
 
+}
 
-/*para dispositivo tamaño teléfono:*/
-@media (max-width: 767.98px) { /*css aplicado en pantallas por debajo 768 px */
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
 
-	#viajes {
-		flex-direction: column-reverse;
-	}
 	.viajes-item {
-		flex-basis: 100%;
-	}
-}	
+		flex-basis: 33.33%;	
+	}	
 
+
+}

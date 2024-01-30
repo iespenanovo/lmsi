@@ -1,0 +1,85 @@
+/*diseño responsive con flexbox y filosofía desktop first*/
+/* prioridad a dispositivos grandes */
+
+* {box-sizing: border-box;}
+
+.dos{
+	background-color: #b6ebb3;
+}
+.uno {
+	background-color: #bacee3;
+}
+.tres {
+	background-color: #7ebdbb;
+}
+
+#cabecera {
+/*	border: 1px solid darkred;*/
+	background-color: #202020;
+	display: flex;
+
+	height: 170px;
+	align-items: center;
+	/* en lugar de las dos propiedades anteriores, también podríamos usar:	*/
+	/*	padding: 50px;*/
+
+
+	justify-content: flex-end; 
+	/* también vale declarar flex-direction en row-reverse */
+	/* y dejar la justificación de items a flex-start (defecto)	*/
+
+}
+
+#logo {
+	margin-right: 12%;
+}
+
+h1 { text-align:center; }
+
+#viajes {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.viajes-item {
+	flex-basis: 33.33%;
+	padding: 20px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.viajes-item img {
+	width: 100%;
+	order: -1;
+}
+
+.viajes-item button {
+	width: 120px;
+	align-self: center;
+	margin-top: auto;
+}
+
+/*para dispositivo tamaño tablet:*/
+@media (max-width: 991.98px) { /*css aplicado en pantallas por debajo 992 px */
+
+	#viajes {
+		flex-wrap: wrap;
+	}
+	.viajes-item {
+		flex-basis: 50%;
+	}
+}	
+
+
+/*para dispositivo tamaño teléfono:*/
+@media (max-width: 767.98px) { /*css aplicado en pantallas por debajo 768 px */
+
+	#viajes {
+		flex-direction: column-reverse;
+	}
+	.viajes-item {
+		flex-basis: 100%;
+	}
+}	
+
