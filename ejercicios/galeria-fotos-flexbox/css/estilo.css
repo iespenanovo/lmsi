@@ -1,3 +1,5 @@
+/* diseño responsive con flexbox - mobile first */
+/* hacemos diseño por defecto para dispositivos pequeños */
 * {
 	box-sizing: border-box;	
 }
@@ -5,4 +7,63 @@
 h1 {
 	text-align: center;
 }
-.
+
+
+.contenedor {
+	display: flex;
+	flex-wrap: wrap;
+	/* podría en lugar de la línea anterior: */
+	/*	flex-direction: column;*/
+
+	row-gap: 10px; /* separación entre items de diferentes filas */
+
+}
+
+.contenedor .item img {
+	width: 100%;
+}
+
+.contenedor .item {
+	flex-basis: 100%;
+}
+
+
+/*// X-Small devices (portrait phones, less than 576px)*/
+/*// No media query for `xs` since this is the default in Bootstrap*/
+
+/*// Small devices (landscape phones, 576px and up)*/
+/*@media (min-width: 576px) {}*/
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	.contenedor {
+/*		border: 1px solid red;*/
+		width: 90%;
+		margin: auto;
+		justify-content: space-between;
+
+	}
+
+	.contenedor .item {
+		flex-basis: 32.5%; /* un valor >25% e <33.33%, para mantener 3 columnas */
+	}	
+
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.contenedor {
+		width: 75%;
+	}
+	.contenedor .item {
+		flex-basis: 19%; 
+	}	
+
+
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+/*@media (min-width: 1200px) {}*/
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+/*@media (min-width: 1400px) {}*/
