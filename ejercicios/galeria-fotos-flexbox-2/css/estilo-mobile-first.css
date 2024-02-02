@@ -1,0 +1,20 @@
+/* diseño responsive con flexbox - mobile first */
+/* hacemos diseño por defecto para dispositivos pequeños */
+/* 
+	1 col dispositivos muy pequeños XS
+	2 col dispositiovs pequeños SM
+	3 col tablet MD
+	4 col escritorio LG
+	6 col escritorio grande XL
+	8 col escritorio muy grande XXL
+
+*/
+
+* {
+	box-sizing: border-box;	
+}
+
+h1 {
+	text-align: center;
+}
+
