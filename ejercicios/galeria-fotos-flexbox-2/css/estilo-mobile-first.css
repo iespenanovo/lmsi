@@ -9,7 +9,9 @@
 	8 col escritorio muy grande XXL
 
 */
-body {border: 1px solid blue}
+body {
+/*	border: 1px solid blue*/
+}
 
 * {
 	box-sizing: border-box;	
@@ -23,7 +25,7 @@ h1 {
 /* No media query for `xs` since this is the default in Bootstrap*/
 
 .contenedor {
-	border: 1px solid red;
+/*	border: 1px solid red;*/
 	/*	width: 100%; ya lo tenemos por defecto*/
 	display: flex;
 	/*	flex-direction: row; ya lo tenemos por defecto*/
