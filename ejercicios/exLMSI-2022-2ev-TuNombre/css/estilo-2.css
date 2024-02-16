@@ -1,0 +1,32 @@
+/* esta es la hoja de estilo para ejer2.html */
+
+* {box-sizing: border-box;}
+
+#contenedor {
+	background-color: lightblue;
+	padding: 100px 0;
+	margin: 50px 0;
+}
+#flex {
+
+}
+
+.item-flex  {
+
+}
+
+table {
+	border-collapse: collapse;
+
+}
+
+table th{
+	background-color: #000;
+	color: #ccc;
+
+}
+
+table td {
+	border-bottom: 1px solid black;
+
+}
