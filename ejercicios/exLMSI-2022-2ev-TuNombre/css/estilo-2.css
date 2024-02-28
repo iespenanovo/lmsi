@@ -8,7 +8,11 @@
 	margin: 50px 0;
 }
 #flex {
+	width: 85%;
+	margin: auto;
+	border: 1px solid tomato;
 
+	display: flex;
 }
 
 .item-flex  {
