@@ -6,31 +6,72 @@
 	background-color: lightblue;
 	padding: 100px 0;
 	margin: 50px 0;
+
+	text-align: center;
 }
 #flex {
 	width: 85%;
 	margin: auto;
 	border: 1px solid tomato;
-
 	display: flex;
+	justify-content: space-evenly ;
 }
 
 .item-flex  {
+	border: 1px dotted grey;
+	padding: 21px 0;
+	flex-basis: 12%;
+}
 
+.item-flex:nth-child(3) {
+	flex-basis: 44%;
+}
+
+.item-flex:nth-child(4) {
+	text-align: left;
+}	
+
+.item-flex:hover {
+	background-color: tomato;
+	color: #fff; /* white */
+}
+
+.item-flex i {
+	font-size: 4.2rem;
 }
 
 table {
 	border-collapse: collapse;
+	width: 100%;
 
 }
 
 table th{
 	background-color: #000;
 	color: #ccc;
+	padding: 11px 0;
 
 }
 
 table td {
 	border-bottom: 1px solid black;
+	padding: 6px 0;
+
+}
+
+ol {
+	list-style: upper-roman;
+}
+
+@media (max-width:991.98px) {
+	#flex {
+		flex-wrap: wrap;
+		justify-content: space-between ;
+		row-gap: 10px;
+	}
+
+	.item-flex {
+		flex-basis: 45% ;
+	}
 
 }
