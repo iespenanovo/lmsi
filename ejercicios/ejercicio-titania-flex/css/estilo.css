@@ -1,0 +1,164 @@
+/* mismo ejercicio con maquetación responsive mobile first */
+/* donde damos prioridad a los dispositivos móviles */
+/* partimos de diseño de maquetación para teléfonos pequeños y medianos */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin:0;
+}
+#cabecera {
+	/*color de fondo: #428bca */
+	background-color: #428bca;
+}
+
+#cabecera, #servicios, #cargos, #pie {
+	padding: 15px 0;
+}
+
+	#cab-cont,#ser-cont, #car-cont, #pie1-cont {
+		width: 90%;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	#cab-cont {
+
+	}
+
+	#cab-cont div {
+		/*border: 1px solid red;*/
+
+	}
+
+	#cab-cont .oculto {
+
+	}
+
+	#cab-cont img {
+		width: 95%;
+	}
+
+	#ser-cont div {
+		/*border: 1px solid red;*/
+	}
+
+	#ser-cont i {
+		font-size: 3rem;
+		color:#428bca;
+	}
+	#ser-cont p {
+		text-align: justify;
+	}
+
+	#cargos {
+		/*color de fondo: fondo-directiva.png   */
+		background-image: url("../img/fondo-directiva.png"); 
+
+	}
+
+	#car-cont div {
+		text-align: center;
+		background-color: #fff;
+		color: #428bca;
+	}
+
+	#car-cont div:hover {
+		border: 3px solid #428bca;	
+	}
+
+	#car-cont img {
+		width: 100%;
+	}
+
+
+#pie {
+	background-color: #1a0000;
+	color: #ccc;
+
+}
+	#pie1-cont div {
+		width: 100%;
+
+	}
+	#pie1-cont ul {
+		padding: 0;
+
+	}	
+
+	.simple {
+		list-style-type: none; 
+	}
+
+	.simple a {
+		color: #ccc;
+		text-decoration: none;
+	}
+
+	.simple a:hover {
+		text-decoration: underline;
+	}
+
+	#pie h3 {
+		font-size: 1.5rem;
+	}
+
+	#pie2-cont {
+		text-align: center;
+	}
+
+	#social a {
+		font-size: 2.5rem;
+		color:#ccc;
+		padding: 10px;
+	}
+
+
+.btn {
+	color: white;
+	font-weight: 400;
+    text-align: center;
+    /*vertical-align: middle;*/
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;	
+    text-decoration: none;
+    display: inline-block;
+
+}	
+
+.btn-claro {
+	color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    width: 32%;
+   
+}
+
+.btn-oscuro {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #428bca;
+}
+
+
+#separador1 {
+	height: 5px;
+	background-color: #2169a8;
+
+}
+#separador2 {
+	height: 5px;
+	background-color: #1a0000;
+
+}
+
+#separador3 {
+	height: 2px;
+	background-color: #ccc;
+	margin:15px 0;
+
+}
+
