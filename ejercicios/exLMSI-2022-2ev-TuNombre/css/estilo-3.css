@@ -76,7 +76,7 @@ section {
 		width: 80%;
 	}
 	.portadas div { /* items */
-		flex-basis: 11.25%;
+		flex-basis: 11.25%; /* 90/8=11.25 */
 
 	}	
 
