@@ -1,0 +1,32 @@
+/* esta es la hoja de estilo para ejer1.html */
+
+* {box-sizing: border-box;}
+
+
+h1{
+	text-align: center;
+}
+
+#contenedor {
+	width: 60%;
+	max-width: 350px;
+	margin: 50px auto;
+	border: 1px solid grey;
+	padding: 15px;
+}
+
+.campos {
+	margin-bottom: 8px;
+}
+label {
+	font-size: 0.8rem;
+	font-weight: bold;
+	color: tomato;
+}
+label.etiqueta {
+	display: block;
+	color: blue;
+}
+
+textarea { width: 100%; }
+

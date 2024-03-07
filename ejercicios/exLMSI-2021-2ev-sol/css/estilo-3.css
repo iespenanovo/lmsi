@@ -1,0 +1,67 @@
+/* esta es la hoja de estilo para ejer1.html */
+
+* {box-sizing: border-box;}
+
+#contenedor {
+	background-color: lightblue;
+	padding: 100px 0;
+	margin: 50px 0;
+}
+#flex {
+	width: 80%;
+	margin: auto;
+	border: 1px solid tomato;
+
+	display: flex;
+	justify-content: space-between;
+
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+.item-flex  {
+	border: 1px dotted grey;
+	flex-basis: 15%;
+	padding: 20px 0;
+	/*background-color: tomato;*/
+
+}
+
+.item-flex:nth-child(1)  {
+	/*flex-basis: 20%;*/
+	text-align: left;
+}	
+.item-flex:nth-child(2)  {
+	flex-basis: 45%;
+}	
+
+
+.icon {
+	font-size: 4rem;
+}
+
+table {
+	margin:0 auto;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table th{
+	background-color: #000;
+	color: #ccc;
+	padding: 10px 0;
+
+}
+
+table td {
+	border-bottom: 1px solid black;
+	padding: 5px 0;
+}
+
+table td:hover {
+	background-color: tomato;
+	color: #fff;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejercicio 2</title>
+	<link rel="stylesheet" href="css/basico.css">
+	<link rel="stylesheet" href="css/estilo-2.css">
+</head>
+<body>
+
+	<!-- solo necesitas modificiar el archivo estilo-1.css vinculado -->
+
+	<h2 class="_nombre">Pon aquí tu nombre</h2>
+	<h3 class="_nombre _ejercicio">Ejercicio 2. Formulario reservas</h3>
+
+
+	<div id="contenedor">
+
+		<h1>Reserva Hotel</h1>
+		<form action="datos-reserva.php">
+			<div class="campos">
+				<label class="etiqueta" for="nombre">Nombre</label>
+				<input type="text" id="nombre" name="nombre">
+			</div>
+			<div class="campos">
+				<label class="etiqueta">Tipo de habitación</label>
+
+				<input type="radio" name="tipohab" value="I" id="indi">
+				<label  for="indi"> Hab. Individual </label> 
+
+				<input type="radio" name="tipohab" value="D" id="doble">
+				<label for="doble"> Hab. Doble</label>
+
+			</div>
+			<div class="campos">
+				<label class="etiqueta">Extras a tu habitación</label>
+
+				<input type="checkbox" name="extras[]" value="par" id="parking">
+				<label for="parking"> Plaza de parking </label>
+
+				<input type="checkbox" name="extras[]" value="bar" id="bar">
+				<label for="bar"> Servicio de minibar </label>			
+			</div>
+
+			<div class="campos">
+				<label class="etiqueta" for="fpago">Forma de pago:</label>
+				<select name="fpago" id="fpago">
+					<option value="0"></option>
+					<option value="1">Contado</option>
+					<option value="2">Visa</option>
+					<option value="3">Cheque</option>
+				</select>
+			</div>
+
+			<div class="campos">
+				<label class="etiqueta" for="ccoment">Comentario</label>
+				<textarea name="coment" id="ccoment" cols="30" rows="3"></textarea>
+			</div>
+
+			<div class="campos">
+				<input type="submit" value="Enviar Datos" >
+				<input type="reset" value="Borrar Datos">
+			</div>
+		</form>
+
+
+
+	</div>
+
+
+
+	<!-- El siguiente código solo es para mostrar una imagen de cómo debe quedar el resultado del ejercicio (no tocar) -->
+	<hr style="margin-top: 40px;">
+	<div style="margin:0 auto;width:100%;text-align:center" >
+		<h3>Crea un formulario como el que se muestra en la figura:</h3>	
+		<a href="img/ejercicio-2.png" target="_blank"><img src="img/ejercicio-2.png" style="width:100%;"></a>
+	</div>
+
+</body>
+</html>
