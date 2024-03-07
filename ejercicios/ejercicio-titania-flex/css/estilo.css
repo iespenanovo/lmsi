@@ -20,20 +20,28 @@ body {
 	#cab-cont,#ser-cont, #car-cont, #pie1-cont {
 		width: 90%;
 		max-width: 1200px;
+		display: flex;
+		flex-wrap: wrap;
 		margin: 0 auto;
+		/*border: 2px dotted green;*/
+		justify-content: space-between;
 	}
 
 	#cab-cont {
-
+		align-items: center;
 	}
 
 	#cab-cont div {
 		/*border: 1px solid red;*/
+		flex-basis: 100%;
+		margin: 10px 0; /* para evitar que se peguen verticalmente los items */
+		display: flex;
+		justify-content: space-between;
 
 	}
 
 	#cab-cont .oculto {
-
+		display: none; /* con esto oculto este item  */
 	}
 
 	#cab-cont img {
@@ -42,6 +50,15 @@ body {
 
 	#ser-cont div {
 		/*border: 1px solid red;*/
+		flex-basis: 100%;
+		margin: 10px 0; /* para evitar que se peguen verticalmente los items */
+		text-align: center;
+/* el siguiente bloque nos permitiría poner los botones a la misma altura */
+/*		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+*/
 	}
 
 	#ser-cont i {
@@ -59,6 +76,8 @@ body {
 	}
 
 	#car-cont div {
+		flex-basis: 45%;
+		margin: 10px 0; /* para evitar que se peguen verticalmente los items */
 		text-align: center;
 		background-color: #fff;
 		color: #428bca;
@@ -80,6 +99,7 @@ body {
 }
 	#pie1-cont div {
 		width: 100%;
+		margin: 10px 0; /* para evitar que se peguen verticalmente los items */		
 
 	}
 	#pie1-cont ul {
@@ -162,3 +182,50 @@ body {
 
 }
 
+
+/*tablets: */
+@media (min-width: 768px) {
+	#cab-cont .oculto {
+		display: block; /* con esto mostramos este item  */
+		/* nos interesa para que se desplace la segunda barra de botones 
+		y quede debajo de la anterior  */
+	}
+	#cab-cont div, #ser-cont div, #pie1-cont div { /*pasamos a 2 columnas cab, ser y pie1*/
+		flex-basis: 45%;
+	}	
+	#car-cont div { /*pasamos a 3 columnas car */
+		flex-basis: 30%;
+	}	
+
+}
+
+/*escritorios: */
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+	#cab-cont,#ser-cont, #car-cont, #pie1-cont {
+		flex-wrap: nowrap;
+	}
+	#cab-cont .oculto {
+		display: none; /* con esto ocultamos este item  */
+	}
+	#cab-cont div, #ser-cont div, #car-cont div, #pie1-cont div {
+		margin: 0; /* ya no necesitamos separación vertical */
+	}
+	#cab-cont div {
+		/*border: 1px solid red;*/
+		flex-basis: 30%;
+	}		
+	#ser-cont div {
+		/*border: 1px solid red;*/
+		flex-basis: 22%;
+	}	
+	#car-cont div {
+		flex-basis: 15%;
+	}	
+	#pie1-cont div {
+		flex-basis: 22%;
+
+	}		
+
+}
