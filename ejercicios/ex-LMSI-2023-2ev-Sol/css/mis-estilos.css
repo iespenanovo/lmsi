@@ -1,0 +1,197 @@
+/* 
+Página para estilos propios (style.css)
+*/
+
+#menu {
+	padding: 10px 0 10px 0;
+}
+	#menu .btn-group {
+		margin-top:  12px;
+	}
+	#menu img, #alumnos img  {
+		margin: 0 auto; 
+		padding-top: 10px;
+	}
+	#menu .btn {
+		font-size: 1.2em;
+	}
+
+#carousel {
+	display: none;
+}
+
+
+#alumnos {
+	background-color: #337ab7; /*azul primary de bootstrap*/
+	color: #fff;
+	text-align: center;
+	padding: 20px 5px;
+}
+
+	#alumnos-cont, #pie-cont, #contacto-cont {
+		width: 100%;
+		max-width: 1200px; /* opcional */
+		margin: 0 auto;
+/*		border: 2px solid #f00;*/
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		row-gap: 10px;
+
+	}
+
+	#alumnos-cont div {
+		padding: 5px;
+		flex-basis: 45%; 
+/*		border: 1px solid grey;*/
+	}
+	#alumnos img, #contacto img, #pie-cont img  {
+		width: 100%;
+	}
+
+	#alumnos-cont div:hover {
+		border: 5px dotted #fff;
+	}
+
+	#alumnos h1 {
+		font-weight: 900;
+	}
+
+
+
+#contacto {
+	background-color: #337ab7; /*azul primary de bootstrap*/
+	color: #fff;
+	padding: 20px 12px;
+
+}
+
+    #contacto-cont>h1 {
+    	flex-basis: 100%;
+    }
+    #contacto-cont>div {
+		flex-basis: 100%;
+/*		border: 1px solid white;*/
+	}
+
+	#contacto-cont label {
+		display: block;
+	}	
+	#contacto-cont label.enlinea {
+		display: inline-block;
+	}	
+
+	#contacto-cont .campo {
+		margin-bottom: 15px;
+	}	
+
+	#contacto-cont input, #contacto-cont textarea {
+		color: black;
+	}	
+
+	#contacto-cont input[type="text"], #contacto-cont input[type="email"], #contacto-cont textarea {
+		width: 100%;
+	}	
+/*
+	#contacto-cont input[type="submit"],#contacto-cont input[type="checkbox"] {
+		width: auto;
+	}
+*/
+
+
+#pie {
+	background-color: #000;
+	padding: 20px 10px;
+	color:#ccc;
+}
+
+	
+	#pie-cont div {
+		flex-basis: 100%;
+/*		border: 1px solid white;*/
+	}
+	#pie #pie-cont div:nth-child(3) {
+		flex-basis: 30% ;
+	}		
+
+	#pie-cont img {
+		margin-top: 40px;
+	}
+
+	#pie-cont ul {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	#pie-cont a {
+		color:#ccc;
+	}	
+
+	#pie-cont table {
+		width: 100%;
+	}	
+	
+	#pie-cont table tr {
+		border-top: 1px solid #ccc;
+	}	
+	#pie-cont table td, #pie-cont table th {
+		padding: 5px 0;
+	}	
+	#pie-cont table tr:hover {
+		background-color: #ccc;
+		color: #000;
+	}	
+
+
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+
+	#alumnos-cont, #contacto-cont, #pie-cont {
+		width: 90%;
+	}
+	
+	#alumnos-cont div {
+		flex-basis: 30%; /* 3 x 30% =90 % , sobra 10% para repartir separación*/
+	}	
+
+    #contacto-cont>div {
+		flex-basis: 49%;
+	}	
+
+	#pie-cont div {
+		flex-basis: 30%;
+	}
+	#pie-cont div:nth-child(2) {
+		flex-basis: 60%;
+	}	
+
+
+
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+	#carousel {
+		display: block;
+	}
+
+	#alumnos-cont, #contacto-cont, #pie-cont {
+		width: 85%;
+	}
+
+	#alumnos-cont div {
+		flex-basis: 15%; /* 6 x 15% =90 % , sobra 10% para repartir separación*/
+	}	
+
+	#pie-cont div {
+		flex-basis: 22.5%;
+		/*border: 1px solid white;*/
+	}
+	#pie-cont div:nth-child(2) {
+		flex-basis: 45%;
+	}	
+
+
+}
+
