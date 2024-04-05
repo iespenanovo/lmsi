@@ -1,0 +1,39 @@
+* {box-sizing: border-box;}
+
+.contenedor {
+	width: 80%;
+	max-width: 1200px;
+	margin: auto;
+	border: 1px dotted black;
+}
+
+.contenedor-grid {
+	border: 1px solid red;
+	display: grid;
+	grid-template-columns: 4fr 10px 1fr;
+	grid-template-rows: 20vh 60vh 20vh;
+	grid-template-areas: ;
+	  "cab cab cab"
+	  "prin . lat"
+	  "pie pie pie";
+}
+
+.contenedor-grid > * { /* items grid */
+	border: 1px solid blue;
+	padding: 1rem;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.cacecera {
+	grid-area: cab;
+}
+.principal {
+	grid-area: prin;
+}
+.barra-lateral {
+	grid-area: lat;
+}
+.pie {
+	grid-area: pie;
+}
