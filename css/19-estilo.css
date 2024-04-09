@@ -12,7 +12,7 @@
 	display: grid;
 	grid-template-columns: 4fr 10px 1fr;
 	grid-template-rows: 20vh 60vh 20vh;
-	grid-template-areas: ;
+	grid-template-areas: 
 	  "cab cab cab"
 	  "prin . lat"
 	  "pie pie pie";
@@ -25,7 +25,7 @@
 	text-align: center;
 }
 
-.cacecera {
+.cabecera {
 	grid-area: cab;
 }
 .principal {
