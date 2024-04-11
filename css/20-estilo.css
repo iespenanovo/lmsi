@@ -1,0 +1,19 @@
+* {box-sizing: border-box;}
+
+.contenedor-grid-1, .contenedor-grid-2 {
+	border: 2px solid red;
+	text-align: center;	
+	margin-bottom: 4rem;
+
+	display: grid;
+	grid-template-columns: repeat(4, 22%);
+	grid-template-rows: repeat(3, 100px);
+
+
+}
+
+.item {
+	border: 1px solid grey;
+	padding: 2rem;
+	font-size: 2rem;
+}

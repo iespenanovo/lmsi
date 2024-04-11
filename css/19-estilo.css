@@ -6,7 +6,7 @@
 	margin: auto;
 	border: 1px dotted black;
 }
-
+/*
 .contenedor-grid {
 	border: 1px solid red;
 	display: grid;
@@ -17,6 +17,26 @@
 	  "prin . lat"
 	  "pie pie pie";
 }
+*/
+/* otra versión de areas más simple, 
+sin necesidad de columna de separación
+ */
+
+.contenedor-grid {
+	border: 1px solid red;
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	grid-template-rows: 20vh 60vh 20vh;
+	grid-template-areas: 
+	  "cab cab"
+	  "prin lat"
+	  "pie pie";
+
+	column-gap: 10px;  
+}
+
+
+
 
 .contenedor-grid > * { /* items grid */
 	border: 1px solid blue;
