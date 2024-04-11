@@ -7,8 +7,20 @@
 
 	display: grid;
 	grid-template-columns: repeat(4, 22%);
-	grid-template-rows: repeat(3, 100px);
+	grid-template-rows: repeat(3, 150px);
 
+
+}
+
+.contenedor-grid-1 {
+	/*start center end stretch*
+	/* alineación items en horizontal y vertical */
+	justify-items: center; /* por defecto stretch */
+	align-items: end; /* por defecto stretch */
+	/* en lugar de las 2 propiedades anteriores, puedo simplificar :	*/
+	place-items: end center; /* vertical horizontal */
+}
+.contenedor-grid-2 {
 
 }
 
