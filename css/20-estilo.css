@@ -4,10 +4,13 @@
 	border: 2px solid red;
 	text-align: center;	
 	margin-bottom: 4rem;
+	height: 600px ;
+
 
 	display: grid;
 	grid-template-columns: repeat(4, 22%);
 	grid-template-rows: repeat(3, 150px);
+
 
 
 }
@@ -19,10 +22,38 @@
 	align-items: end; /* por defecto stretch */
 	/* en lugar de las 2 propiedades anteriores, puedo simplificar :	*/
 	place-items: end center; /* vertical horizontal */
+
+/*	place-content: space-between;*/
+}
+
+.contenedor-grid-1 .item:nth-child(3){
+	justify-self:end ; /*cambia alineación horizontal para este item en particular*/
+	align-self: start; /*cambia alineación vertical para este item en particular*/
 }
 .contenedor-grid-2 {
+	/* alineación horizontal 'celdas de la grilla' (si sobra espacio)	*/
+	/* por defecto se aplica 'start'	*/
+/*	justify-content: start; /*
+/*	justify-content: end;*/
+/*	justify-content: center;*/
+/*	justify-content: stretch;*/
+	justify-content: space-between;
+/*	justify-content: space-evenly;*/
+/*	justify-content: space-around;*/
 
+	/* alineación vertical 'celdas de la grilla' (si sobra espacio)	*/
+	/* por defecto se aplica 'start'	*/
+/*	align-content: start; */
+/*	align-content: end;
+/*	align-content: center;*/
+/*	align-content: stretch;*/
+/*	align-content: space-between;*/
+/*	align-content: space-evenly;*/
+	align-content: space-around;
+	/* en lugar de las 2 propiedades anteriores, puedo simplificar :	*/
+	place-content: space-around space-between;
 }
+
 
 .item {
 	border: 1px solid grey;
