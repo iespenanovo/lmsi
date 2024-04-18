@@ -15,6 +15,7 @@
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto; /* por defecto */
+	gap: 10px 5px;
 }
 
 .item {
@@ -39,20 +40,43 @@
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+	.contenedor{
+		width: 90%; 
+	}
+	.contenedor-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}	
 
 }
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+	.contenedor{
+		width: 85%; 
+	}
+	.contenedor-grid {
+		grid-template-columns: repeat(4, 1fr);
+	}	
 
 }
 
 /*// X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+	.contenedor{
+		width: 80%; 
+	}
+	.contenedor-grid {
+		grid-template-columns: repeat(6, 1fr);
+	}	
 
 }
 
 /*// XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
-
+	.contenedor{
+		width: 75%; 
+	}
+	.contenedor-grid {
+		grid-template-columns: repeat(8, 1fr);
+	}	
 }

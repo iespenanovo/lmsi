@@ -1,0 +1,106 @@
+/*diseño responsive con flexbox y filosofía mobile first*/
+/* prioridad a dispositivos pequeños */
+
+* {box-sizing: border-box;}
+
+.dos{
+	background-color: #b6ebb3;
+}
+.uno {
+	background-color: #bacee3;
+}
+.tres {
+	background-color: #7ebdbb;
+}
+
+#cabecera {  
+/*	border: 1px solid darkred;*/
+	background-color: #202020;
+	display: grid;
+	grid-template-columns: 1fr;
+	height: 170px;
+
+	/* en lugar de las dos propiedades anteriores, también podríamos usar:	*/
+	/*	padding: 50px;*/
+
+	align-items: center;
+	justify-items: end; 
+
+}
+
+#logo {
+/*	border: 1px solid red;*/
+	margin-right: 12%;
+}
+/*#logo img {
+	border: 1px dotted white;
+}*/
+
+h1 { text-align:center; }
+
+#viajes {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+}
+
+
+
+.viajes-item {
+	border: 1px solid red;
+	padding: 20px;
+	display: grid;
+}
+
+.viajes-item.tres {	
+	grid-row: 1 / span 1; /* ou:  1/2 */
+}
+.viajes-item.dos  {	
+	grid-row: 2 / span 1; /* ou:  2/3 */
+}
+.viajes-item.uno  {	
+	grid-row: 3 / span 1; /* ou:  3/4 */
+}
+
+
+.viajes-item img {
+	width: 100%;
+}
+
+.viajes-item button {
+	width: 120px;
+	align-self: center;
+	margin-top: auto;
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+	#viajes {
+		grid-template-columns: repeat(2, 1fr); /* 1fr 1fr */
+	}	
+
+	.viajes-item.tres {
+/*		grid-row: 1 / span 1;*/
+		grid-column: 1 / span 1;
+	}
+	.viajes-item.dos  {
+		grid-row: 1 / span 1;
+		grid-column: 2 / span 1;
+	}
+	.viajes-item.uno  {
+		grid-row: 2 / span 1;
+	}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	#viajes {
+		grid-template-columns: repeat(3, 1fr);
+	}	
+	.viajes-item.uno  {
+		grid-row: 1 / span 1;
+	}
+
+
+}
