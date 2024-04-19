@@ -47,9 +47,30 @@ h1 { text-align:center; }
 
 
 .viajes-item {
-	border: 1px solid red;
+/*	border: 1px solid red;*/
 	padding: 20px;
 	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	align-content: start;
+
+	position: relative;
+}
+
+.viajes-item img {
+	grid-row: 1 / span 1; /* ou:  1/2 */
+}
+
+.viajes-item button {
+	width: 120px;
+/*	justify-self: center;*/
+
+/* si queremos colocar todos
+ los botones a la misma altura, 
+ fuera de grilla */
+	position: absolute;
+	bottom: 8px;
+	left: 35%;
 }
 
 .viajes-item.tres {	
