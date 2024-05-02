@@ -1,0 +1,252 @@
+/* mismo ejercicio con maquetación responsive mobile first */
+/* donde damos prioridad a los dispositivos móviles */
+/* partimos de diseño de maquetación para teléfonos pequeños y medianos */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin:0;
+}
+#cabecera {
+	/*color de fondo: #428bca */
+	background-color: #428bca;
+}
+
+#cabecera, #servicios, #cargos, #pie {
+	padding: 15px 0;
+}
+
+	#cab-cont,#ser-cont, #car-cont, #pie1-cont {
+		width: 90%;
+		max-width: 1200px;
+		display: grid;
+		grid-template-columns: 1fr; 
+/*		flex-wrap: wrap;*/
+		margin: 0 auto;
+		/*border: 2px dotted green;*/
+		justify-content: space-between;
+	}
+
+	#cab-cont {
+		align-items: center;
+	}
+
+	#cab-cont div:nth-child(even) { /* even afecta a items pares, 2 e 4 */
+/*		border: 1px solid red;*/
+/*		flex-basis: 100%;*/
+		margin: 10px 0; /* para evitar que se peguen verticalmente los items */
+/*		display: flex;*/
+/*		justify-content: space-between;*/
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 10px;
+	}
+	#cab-cont .btn {
+		width: 100%;
+	}
+
+	#cab-cont .oculto {
+		display: none; /* con esto oculto este item  */
+	}
+
+	#cab-cont img {
+/*		width: 95%;*/
+	}
+
+	#ser-cont div {
+		/*border: 1px solid red;*/
+		flex-basis: 100%;
+		margin: 10px 0; /* para evitar que se peguen verticalmente los items */
+		text-align: center;
+/* el siguiente bloque nos permitiría poner los botones a la misma altura */
+/*		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+*/
+	}
+
+	#ser-cont i {
+		font-size: 3rem;
+		color:#428bca;
+	}
+	#ser-cont p {
+		text-align: justify;
+	}
+
+	#cargos {
+		/*color de fondo: fondo-directiva.png   */
+		background-image: url("../img/fondo-directiva.png"); 
+
+	}
+
+	#car-cont {
+		grid-template-columns: repeat(2, 45%);
+	}
+
+	#car-cont div {
+/*		flex-basis: 45%;*/
+		margin: 10px 0; /* para evitar que se peguen verticalmente los items */
+		text-align: center;
+		background-color: #fff;
+		color: #428bca;
+	}
+
+	#car-cont div:hover {
+		border: 3px solid #428bca;	
+	}
+
+	#car-cont img {
+		width: 100%;
+	}
+
+
+#pie {
+	background-color: #1a0000;
+	color: #ccc;
+
+}
+	#pie1-cont div {
+		width: 100%;
+		margin: 10px 0; /* para evitar que se peguen verticalmente los items */		
+
+	}
+	#pie1-cont ul {
+		padding: 0;
+
+	}	
+
+	.simple {
+		list-style-type: none; 
+	}
+
+	.simple a {
+		color: #ccc;
+		text-decoration: none;
+	}
+
+	.simple a:hover {
+		text-decoration: underline;
+	}
+
+	#pie h3 {
+		font-size: 1.5rem;
+	}
+
+	#pie2-cont {
+		text-align: center;
+	}
+
+	#social a {
+		font-size: 2.5rem;
+		color:#ccc;
+		padding: 10px;
+	}
+
+
+.btn {
+	color: white;
+	font-weight: 400;
+    text-align: center;
+    /*vertical-align: middle;*/
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;	
+    text-decoration: none;
+    display: inline-block;
+
+}	
+
+.btn-claro {
+	color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    width: 32%;
+   
+}
+
+.btn-oscuro {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #428bca;
+}
+
+
+#separador1 {
+	height: 5px;
+	background-color: #2169a8;
+
+}
+#separador2 {
+	height: 5px;
+	background-color: #1a0000;
+
+}
+
+#separador3 {
+	height: 2px;
+	background-color: #ccc;
+	margin:15px 0;
+
+}
+
+
+/*tablets: */
+@media (min-width: 768px) {
+	#cab-cont .oculto {
+		display: block; /* con esto mostramos este item  */
+		/* nos interesa para que se desplace la segunda barra de botones 
+		y quede debajo de la anterior  */
+	}
+	#cab-cont, #ser-cont, #pie1-cont { /*pasamos a 2 columnas cab, ser y pie1*/
+/*		flex-basis: 45%; , estaba con selector:'#xxx-cont div'*/
+		grid-template-columns: repeat(2, 45%);
+	}	
+	#car-cont { /*pasamos a 3 columnas car */
+		grid-template-columns: repeat(3, 30%);
+/*		flex-basis: 30%;, estaba con selector '#car-cont div'*/
+	}	
+
+}
+
+/*escritorios: */
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+/*	#cab-cont,#ser-cont, #car-cont, #pie1-cont {
+		flex-wrap: nowrap;
+	}
+*/	
+	#cab-cont{
+		grid-template-columns: repeat(3, 30%);
+	}
+	#ser-cont, #pie1-cont {
+		grid-template-columns: repeat(4, 22%);
+	}
+	#car-cont {
+		grid-template-columns: repeat(6, 15%);
+	}
+
+	#cab-cont .oculto {
+		display: none; /* con esto ocultamos este item  */
+	}
+	#cab-cont div, #ser-cont div, #car-cont div, #pie1-cont div {
+		margin: 0; /* ya no necesitamos separación vertical */
+	}
+/*	
+	#cab-cont div {
+		flex-basis: 30%;
+	}		
+	#ser-cont div {
+		flex-basis: 22%;
+	}	
+	#car-cont div {
+		flex-basis: 15%;
+	}	
+	#pie1-cont div {
+		flex-basis: 22%;
+	}		
+*/
+}
