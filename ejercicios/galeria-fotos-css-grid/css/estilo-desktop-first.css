@@ -1,0 +1,85 @@
+/* empezamos con css para 8 columnas, sin @media, diseño por defeco */
+/* No media query for `xxl` >1400px since this is the default in Bootstrap*/
+
+* {	box-sizing: border-box;	}
+
+body {border: 1px solid blue}
+
+h1 {text-align: center;}
+
+
+.contenedor {
+	border: 1px solid red;
+	width: 75%;
+	margin: auto;
+	justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 10px;
+}
+
+.item img {
+	width: 100%;
+}
+
+.item {
+	flex-basis: 12.125%; /* 97/8=12,125 */
+}
+
+
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px)*/
+@media (max-width: 1399.98px) { /* 6 columnas */
+	.contenedor {
+		width: 80%;
+	}
+	.item {
+		flex-basis: 16.16%; /* 97/6=16,16 */
+	}
+
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { /* 4 columnas */
+	.contenedor {
+		width: 85%;
+	}
+	.item {
+		flex-basis: 24.25%; /* 97/4=24,25 */
+	}
+
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { /* 3 columnas */
+	.contenedor {
+		width: 90%;
+	}
+	.item {
+		flex-basis: 32.33%; /* 97/3=32,33 */
+	}
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { /* 2 columnas */
+	.contenedor {
+		width: 95%;
+	}
+	.item {
+		flex-basis: 48.5%; /* 97/2=48,5 */
+	}
+
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { /* 1 columna */
+	.contenedor {
+		width: 100%;
+	}
+	.item {
+		flex-basis: 100%; /* 100/1=100 */
+	}
+
+}
+
+

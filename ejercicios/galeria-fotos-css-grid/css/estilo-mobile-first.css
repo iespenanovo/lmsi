@@ -1,0 +1,102 @@
+/* diseño responsive con flexbox - mobile first */
+/* hacemos diseño por defecto para dispositivos pequeños */
+/* 
+	1 col dispositivos muy pequeños XS
+	2 col dispositiovs pequeños SM
+	3 col tablet MD
+	4 col escritorio LG
+	6 col escritorio grande XL
+	8 col escritorio muy grande XXL
+
+*/
+body {
+/*	border: 1px solid blue*/
+}
+
+* {
+	box-sizing: border-box;	
+}
+
+h1 {
+	text-align: center;
+}
+/* empezamos con css para 1 columna, sin @media, diseño por defeco */
+/* X-Small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+.contenedor {
+/*	border: 1px solid red;*/
+	/*	width: 100%; ya lo tenemos por defecto*/
+	display: flex;
+	/*	flex-direction: row; ya lo tenemos por defecto*/
+
+	/*	flex-direction: column;*/
+	/* puedo trabajar con flex-direction: row, al permitir saltos
+	de fila (wrap) y dar ancho del 100% a los items. Así consigo
+	igualmente una sola columna. */
+	flex-wrap: wrap;
+	row-gap: 10px;
+}
+
+.item img {
+	width: 100%;
+}
+
+.item {
+	flex-basis: 100%;
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+	.contenedor {
+		width: 95%;
+		margin: auto;
+		justify-content: space-between;
+	}
+	.item {
+		flex-basis: 48.5%; /* 97/2=48,5 */
+	}
+
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	.contenedor {
+		width: 90%;
+	}
+	.item {
+		flex-basis: 32.33%; /* 97/3=32,33 */
+	}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.contenedor {
+		width: 85%;
+	}
+	.item {
+		flex-basis: 24.25%; /* 97/4=24,25 */
+	}
+}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.contenedor {
+		width: 80%;
+	}
+	.item {
+		flex-basis: 16.16%; /* 97/6=16,16 */
+	}
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+	.contenedor {
+		width: 75%;
+	}
+	.item {
+		flex-basis: 12.125%; /* 97/8=12,125 */
+	}
+}

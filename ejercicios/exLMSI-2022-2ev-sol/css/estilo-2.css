@@ -1,0 +1,82 @@
+/* esta es la hoja de estilo para ejer2.html */
+
+* {box-sizing: border-box;}
+
+#contenedor {
+	background-color: lightblue;
+	padding: 100px 0;
+	margin: 50px 0;
+}
+#flex {
+	width: 85%;
+	margin: auto;
+	border: 1px solid tomato;
+
+	display: flex;
+	justify-content: space-evenly;
+
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+.item-flex  {
+	border: 1px dotted grey;
+	flex-basis: 12%;
+	padding: 21px 0;
+
+}
+
+.item-flex:nth-child(4)  {
+	text-align: left;
+}	
+.item-flex:nth-child(3)  {
+	flex-basis: 44%;
+}	
+
+
+.icon {
+	font-size: 4.2rem;
+}
+
+table {
+	margin:0 auto;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table th{
+	background-color: #000;
+	color: #ccc;
+	padding: 11px 0;
+
+}
+
+table td {
+	border-bottom: 1px solid black;
+	padding: 6px 0;
+}
+
+.item-flex:hover {
+	background-color: tomato;
+	color: #fff;
+
+}
+
+ol {
+	list-style: upper-roman;
+}
+
+/*// `lg` applies to medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+  #flex {
+  	flex-wrap: wrap;
+  	justify-content: space-between;
+  }	
+  .item-flex {
+  	flex-basis: 45% ;
+  	margin-bottom: 10px;
+  }
+}
