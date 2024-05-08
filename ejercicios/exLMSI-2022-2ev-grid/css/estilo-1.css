@@ -1,0 +1,50 @@
+/* esta es la hoja de estilo para ejer1.html */
+
+* {box-sizing: border-box;}
+
+#contenedor,#resto {
+	width: 80%;
+	margin: auto;
+}
+
+#contenedor {
+	height: 400px;
+	border: 2px solid blue;
+	margin-top:100px;
+
+
+	position: relative;
+}
+
+
+#uno, #dos {
+	font-weight: bold;
+	padding: 5px;
+}
+
+
+#uno {
+	width: 50%;
+	border 1px solid grey;
+	background-color: tomato;
+	color:#fff;
+
+	position: absolute;
+	left: 5px;
+	top: 15px;
+
+}
+
+#dos {
+	width: 25%;
+	border 1px solid red;
+	background-color: #000;
+	color:#ccc;
+
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	margin:0;
+
+}
+

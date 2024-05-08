@@ -27,14 +27,8 @@ h1 {
 .contenedor {
 /*	border: 1px solid red;*/
 	/*	width: 100%; ya lo tenemos por defecto*/
-	display: flex;
-	/*	flex-direction: row; ya lo tenemos por defecto*/
-
-	/*	flex-direction: column;*/
-	/* puedo trabajar con flex-direction: row, al permitir saltos
-	de fila (wrap) y dar ancho del 100% a los items. Así consigo
-	igualmente una sola columna. */
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 1fr;
 	row-gap: 10px;
 }
 
@@ -53,11 +47,12 @@ h1 {
 		width: 95%;
 		margin: auto;
 		justify-content: space-between;
+		grid-template-columns: repeat(2, 48.5%) ;
 	}
-	.item {
+/*	.item { 
 		flex-basis: 48.5%; /* 97/2=48,5 */
-	}
-
+	}/*
+*/
 
 }
 
@@ -65,38 +60,47 @@ h1 {
 @media (min-width: 768px) {
 	.contenedor {
 		width: 90%;
+		grid-template-columns: repeat(3, 32.33%) ;
+
 	}
-	.item {
-		flex-basis: 32.33%; /* 97/3=32,33 */
-	}
+
+/*	.item {*/
+/*		flex-basis: 32.33%; /* 97/3=32,33 */
+/*	}*/
+
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 	.contenedor {
 		width: 85%;
+		grid-template-columns: repeat(4, 24.25%) ;
 	}
-	.item {
-		flex-basis: 24.25%; /* 97/4=24,25 */
-	}
+/*	.item {*/
+/*		flex-basis: 24.25%; /* 97/4=24,25 */
+/*	}*/
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 	.contenedor {
 		width: 80%;
+		grid-template-columns: repeat(6, 16.16%) ;
+
 	}
-	.item {
-		flex-basis: 16.16%; /* 97/6=16,16 */
-	}
+/*	.item {*/
+/*		flex-basis: 16.16%; /* 97/6=16,16 */
+/*	}*/
 }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
 	.contenedor {
 		width: 75%;
+		grid-template-columns: repeat(8, 12.125%) ;
+
 	}
-	.item {
-		flex-basis: 12.125%; /* 97/8=12,125 */
-	}
+/*	.item {*/
+/*		flex-basis: 12.125%; /* 97/8=12,125 */
+/*	}*/
 }

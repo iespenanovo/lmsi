@@ -1,0 +1,82 @@
+/* esta es la hoja de estilo para ejer3.html */
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	background-color: #000;
+	color: #fff;
+}
+
+#contenedor {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+header { /* contenedor flex */
+	display: flex;
+	align-items: center;
+}
+
+header img {
+	height: 60px;
+	margin-right: 20px;
+}
+nav a {
+	color: #fff;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+.categorias h1 {
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+.portadas { /*contenedor flex*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.portadas div {
+	flex-basis: 45%;
+	margin-bottom: 10px;
+	/*margin-right: 5px;*/
+
+}
+.portadas img {
+	width: 100%;
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	#contenedor {
+		width: 90%;
+	}
+
+	.portadas div{
+		flex-basis: 22.50%;
+	}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+	#contenedor {
+		width: 80%;
+	}
+	.portadas div{
+		flex-basis: 11.25%;
+	}
+}	
+
+
