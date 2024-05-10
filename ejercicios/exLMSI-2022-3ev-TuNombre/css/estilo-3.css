@@ -1,0 +1,46 @@
+/* esta es la hoja de estilo para ejer3.html */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+#alumnos {
+	background-color: #337ab7; /*azul primary de bootstrap*/
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+}
+
+	#alumnos-cont{
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		/*border: 2px solid #f00;*/
+
+
+	}
+
+	#alumnos-cont img {
+		width: 100%; 
+		max-width: 200px;
+	}
+
+	#alumnos-cont div {
+		padding: 15px;
+		border: 1px solid #fff;
+	}
+
+	#alumnos-cont div:hover {
+		border: 1px dotted #000;
+		background-color: white;
+		color: blue;
+	}
+
+	#alumnos h1 {
+		font-weight: 900;
+	}
+
+

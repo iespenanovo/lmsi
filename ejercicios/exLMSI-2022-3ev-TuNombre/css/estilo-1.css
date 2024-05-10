@@ -1,0 +1,41 @@
+/* esta es la hoja de estilo para ejer1.html */
+
+* {box-sizing: border-box;}
+
+#cajas,#resto {
+	width: 60%;
+	margin: auto;
+}
+
+#cajas {
+	height: 200px;
+	border: 2px dotted red;
+	margin-top:50px;
+
+}
+
+
+#caja1, #caja2 {
+	font-weight: bold;
+	padding: 5px;
+	margin: 0;
+}
+
+
+#caja1 {
+	width: 50%;
+	border: 1px solid grey;
+	background-color: lightpink;
+	color: blue;
+
+
+}
+
+#caja2 {
+	width: 25%;
+	border: 1px solid red;
+	background-color: blue;
+	color:#fff;
+
+}
+

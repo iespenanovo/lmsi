@@ -7,12 +7,15 @@
 	padding: 100px 0;
 	margin: 50px 0;
 }
-#flex {
+#grid {
 	width: 85%;
 	margin: auto;
 	border: 1px solid tomato;
 
 	display: grid;
+	grid-template-columns: 12% 12% 44% 12%;
+/*	equivalente la siguiente notación :*/
+/*	grid-template-columns: repeat(2, 12%) 44% 12%;*/
 	justify-content: space-evenly;
 
 	text-align: center;
@@ -22,19 +25,19 @@ h1 {
 	text-align: center;
 }
 
-.item-flex  {
+.item-grid  {
 	border: 1px dotted grey;
-	flex-basis: 12%;
+/*	flex-basis: 12%;*/
 	padding: 21px 0;
 
 }
 
-.item-flex:nth-child(4)  {
+.item-grid:nth-child(4)  {
 	text-align: left;
 }	
-.item-flex:nth-child(3)  {
-	flex-basis: 44%;
-}	
+/*.item-grid:nth-child(3)  {*/
+/*	flex-basis: 44%;*/
+/*}	*/
 
 
 .icon {
@@ -59,7 +62,7 @@ table td {
 	padding: 6px 0;
 }
 
-.item-flex:hover {
+.item-grid:hover {
 	background-color: tomato;
 	color: #fff;
 
@@ -71,12 +74,14 @@ ol {
 
 /*// `lg` applies to medium devices (tablets, less than 992px)*/
 @media (max-width: 991.98px) {
-  #flex {
-  	flex-wrap: wrap;
+  #grid {
+/*  	flex-wrap: wrap;*/
+		grid-template-columns: repeat(2, 45%);
   	justify-content: space-between;
+  	row-gap: 10px; /* cambiamos esto por margin-bottom:10px */
   }	
-  .item-flex {
-  	flex-basis: 45% ;
-  	margin-bottom: 10px;
-  }
+/*  .item-grid {*/
+/*  	flex-basis: 45% ;*/
+/*  	margin-bottom: 10px;*/
+/*  }*/
 }

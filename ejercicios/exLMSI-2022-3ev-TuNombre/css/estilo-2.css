@@ -1,0 +1,20 @@
+/* esta es la hoja de estilo para ejer2.html */
+
+* {box-sizing: border-box;}
+
+body {
+	margin: 0;
+}
+
+.contenedor {
+	background-color: #eee;
+	padding: 100px 0;
+	margin: 50px 0;
+
+}
+#principal {
+	border: 1px solid tomato;
+
+}
+
+
