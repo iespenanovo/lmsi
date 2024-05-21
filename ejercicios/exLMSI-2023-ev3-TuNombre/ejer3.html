@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejercicio 3</title>
+	<link rel="stylesheet" href="css/bootstrap-5.3.0-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/basico.css">
+	<link rel="stylesheet" href="css/estilo-control-imagenes.css">
+	<link rel="stylesheet" href="css/estilo-3.css">
+
+</head>
+<body>
+
+	<h2 class="_nombre">Pon aquí tu nombre</h2>
+	<h3 class="_nombre _ejercicio">Ejercicio 3 - Bootstrap</h3>
+
+	<div class="container">
+		<!-- Diapositivas: -->
+		<div id="diapositivas" class="carousel slide">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#diapositivas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#diapositivas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#diapositivas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/slider1.jpg" class="w-100">
+					<div class="carousel-caption">
+						<h5>Título 1</h5>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="img/slider2.jpg" class="w-100">
+					<div class="carousel-caption">
+						<h5>Título 2</h5>
+						<p>Deserunt, inventore totam iste.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="img/slider3.jpg" class="w-100">
+					<div class="carousel-caption">
+						<h5>Título 2</h5>
+						<p>Some representative placeholder content for the third slide.</p>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#diapositivas" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#diapositivas" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+
+		<div id="contenido" >
+			<div class="row">
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
+				<div>4</div>
+				<div>5</div>
+				<div>6</div>
+				<div>7</div>
+				<div>8</div>
+				<div>9</div>
+				<div>10</div>
+				<div>11</div>
+				<div>12</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- el siguiente bloque es solo para mostrar las imágenes de los resultados. NO TOCAR -->
+	<div class="container">
+		<hr class="_separador">
+		<div id="img-xs" class="imagenes_ejercicios">
+			<h3>Dispositivos muy pequeños</h3>
+			<img src="img/ejer3-xs.jpg">
+		</div>
+		<div id="img-sm" class="imagenes_ejercicios">
+			<h3>Dispositivos pequeños</h3>
+			<img src="img/ejer3-sm.jpg">
+		</div>
+		<div id="img-md" class="imagenes_ejercicios">
+			<h3>Tablets</h3>
+			<img src="img/ejer3-md.jpg">
+		</div>
+		<div id="img-lg" class="imagenes_ejercicios">
+			<h3>Escritorios</h3>
+			<img src="img/ejer3-lg.jpg">
+		</div>
+		<div id="img-xl" class="imagenes_ejercicios">
+			<h3>Escritorios grandes</h3>
+			<img src="img/ejer3-xl.jpg">
+		</div>
+		<div id="img-xxl" class="imagenes_ejercicios">
+			<h3>Escritorios muy grandes</h3>
+			<img src="img/ejer3-xxl.jpg">
+		</div>
+	</div>
+
+	<script src="css/bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

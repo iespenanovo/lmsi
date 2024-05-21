@@ -1,0 +1,22 @@
+/* esta es la hoja de estilo para ejer3.html */
+
+* {
+	box-sizing: border-box;
+}
+
+#diapositivas {
+	margin: 30px 0;
+}
+
+#contenido .row {
+	border: 1px solid red;
+}
+#contenido .row div {
+	border: 1px dotted grey;
+	padding: 1rem;
+	text-align: center;
+	font-size: 2rem;
+}
+
+/* NO ES NECESARIO TOCAR ESTA HOJA DE ESTILOS. 
+USA LAS CLASES DE BOOTSTRAP PARA MAQUETAR  */

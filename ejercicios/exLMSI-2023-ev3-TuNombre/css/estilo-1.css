@@ -1,0 +1,56 @@
+/* esta es la hoja de estilo para ejer1.html */
+/* ESCRIBE TU CSS AL FINAL DEL ARCHIVO ANTES DE LAS 
+   SECCIONES media queries  */
+
+* {box-sizing: border-box;}
+
+body {
+	margin: 0;
+}
+
+.contenedor {
+	width: 90%;
+	margin: 30px auto;
+
+}
+.titulo {
+	border-top: 3px solid darkred;
+	border-bottom:3px solid darkred;
+	padding: 0.5rem;
+	text-align: center;
+}
+
+.contenido {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	gap: 15px;
+
+}	
+.contenido-ejercicio {
+	border-bottom: 1px dashed;
+	padding: 10px;
+}
+.contenido-imagen img {
+		width: 100%;
+}
+
+/******************************************************************/
+/*ESCRIBE AQUÍ TU CODIGO CSS :*/
+
+
+
+
+/******************************************************************/
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	.contenido {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.contenido-ejercicio {
+		border-right: 1px dashed; darkred;
+		border-bottom: 0px;
+	}	
+}
+

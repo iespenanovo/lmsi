@@ -1,0 +1,73 @@
+/* a continuación está el  */
+/* estilo para mostrar y ocultar imágenes en función del dispositivo  */
+/*NO TOCAR*/
+hr._separador {
+	color: black;
+	border-top: 2px solid black;
+	margin:20px auto;
+}
+.imagenes_ejercicios {
+	display: none;
+	text-align: center;
+}
+.imagenes_ejercicios img {
+	width: 100%;
+}
+
+#img-xs {
+	display: block;
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+	#img-xs {
+		display: none;
+	}
+	#img-sm {
+		display: block;
+	}
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	#img-sm {
+		display: none;
+	}
+	#img-md {
+		display: block;
+	}
+
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	#img-md {
+		display: none;
+	}
+	#img-lg {
+		display: block;
+	}
+
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	#img-lg {
+		display: none;
+	}
+	#img-xl {
+		display: block;
+	}
+
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+	#img-xl {
+		display: none;
+	}
+	#img-xxl {
+		display: block;
+	}
+
+}

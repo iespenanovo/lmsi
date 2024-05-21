@@ -1,0 +1,21 @@
+/* esta es la hoja de estilo para ejer2.html */
+
+* {
+	box-sizing: border-box;
+}
+
+/*ESCRIBE/COMPLETA AQUÍ TU CÓDIGO CSS*/
+
+.contenedor {
+	border: 1px solid red;
+
+}
+
+.contenedor  div {
+	border: 1px dotted grey;
+	padding: 1rem;
+	text-align: center;
+	font-size: 2rem;
+}
+
+
