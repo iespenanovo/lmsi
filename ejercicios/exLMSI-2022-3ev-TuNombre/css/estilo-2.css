@@ -10,11 +10,85 @@ body {
 	background-color: #eee;
 	padding: 100px 0;
 	margin: 50px 0;
+	text-align: center;
 
 }
 #principal {
+	width: 100%;
+	margin: auto;
 	border: 1px solid tomato;
+	padding: 10px;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	gap:10px;
 
 }
 
+.item {
+	border: 1px dotted grey;
+	padding: 20px 0;
+}
 
+.icon {
+	font-size: 5rem;
+	color: blue;
+}
+
+.item img {
+	width: 100%;
+	max-width: 165px;
+}
+table {
+	margin:0 auto;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table th,table td {
+	border: 1px solid black;
+} 
+table th{
+	background-color: #000;
+	color: #ccc;
+	padding: 15px 0;
+}
+
+table td {
+	padding: 6px 0;
+}
+
+table td:hover {
+	background-color: tomato;
+	color: #fff;
+
+}
+
+td[colspan],td[rowspan] {
+	background-color: lightblue;
+}
+
+ol {
+	list-style: upper-alpha;
+}
+.item:nth-child(4)  {
+	text-align: left;
+}	
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	#principal {
+		width: 90%;
+		grid-template-columns: 2fr 1fr;
+	}
+}	
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	#principal {
+		width: 80%;
+		grid-template-columns: repeat(2, 1fr) 3fr 1fr;
+	}
+}
+
+}
