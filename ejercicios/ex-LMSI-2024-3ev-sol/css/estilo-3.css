@@ -1,0 +1,86 @@
+/* esta es la hoja de estilo para ejer3.html */
+
+* {
+	box-sizing: border-box;
+}
+
+#diapositivas {
+	margin: 30px 0;
+}
+
+#contenido {
+	border: 1px solid red;
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 12px;
+}
+
+#contenido div {
+	border: 1px dotted grey;
+	padding: 1rem;
+	text-align: center;
+	font-size: 2rem;
+}
+/*https://www.esthersola.com/nth-child-css-ejemplos-practicos/*/
+#contenido div:nth-child(n+7) {
+	display: none;
+}
+
+#diapositivas {
+	display: none;
+}
+
+/*X-Small devices (portrait phones, less than 576px)*/
+/*No media query for `xs` since this is the default in Bootstrap*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+	#contenido {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	#diapositivas {
+		display: block;
+	}
+	#diapositivas p{
+		display: none;
+	}
+	#contenido div:nth-child(n+7) {
+		display: block;
+	}
+	#contenido {
+		grid-template-columns: 33.33% 25% 33.33%;
+		justify-content: space-between;
+	}
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	#diapositivas p{
+		display: block;
+	}
+	#contenido {
+		grid-template-columns: repeat(3, 25%) 8.33%;
+		justify-content: space-evenly;
+	}
+
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	#diapositivas {
+		display: none;
+	}
+	#contenido {
+		grid-template-columns: 25% 8.33% 16.66% 8.33% repeat(2,16.66%);
+	}
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+/*@media (min-width: 1400px) {*/
+/*}*/

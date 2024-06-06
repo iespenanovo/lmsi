@@ -1,0 +1,74 @@
+/* esta es la hoja de estilo para ejer2.html */
+
+* {
+	box-sizing: border-box;
+}
+
+.contenedor {
+	width: 100%;
+	margin: auto;
+	border: 1px solid red;
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 10px;
+}
+.contenedor  div {
+	border: 1px dotted grey;
+	padding: 1rem;
+	text-align: center;
+	font-size: 2rem;
+	flex-basis: 100%;
+
+}
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+	.contenedor {
+		width: 95%;
+	}
+	.contenedor  div:nth-child(odd) {
+		flex-basis: 33.33% ;
+	}
+	.contenedor  div:nth-child(even) {
+		flex-basis: 66.66% ;
+	}	
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	.contenedor {
+		width: 90%;
+	}
+	.contenedor  div:nth-child(1), .contenedor div:nth-child(3), .contenedor div:nth-child(4),  .contenedor div:nth-child(6) {
+		flex-basis: 16.66%;
+	}	
+	.contenedor  div:nth-child(2), .contenedor div:nth-child(5) {
+		flex-basis: 66.66%;
+	}	
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.contenedor {
+		width: 85%;
+		justify-content: space-between;
+
+	}
+	.contenedor  div:nth-child(2), .contenedor div:nth-child(3), .contenedor div:nth-child(4),  .contenedor div:nth-child(6) {
+		flex-basis: 25%;
+	}	
+	.contenedor  div:nth-child(1), .contenedor div:nth-child(5) {
+		flex-basis: 17%;
+	}		
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.contenedor {
+		width: 80%;
+		justify-content: space-evenly;
+
+	}
+	.contenedor  div {
+		flex-basis: 15% !important;
+	}		
+}
